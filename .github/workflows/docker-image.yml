@@ -22,5 +22,5 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Build the Docker image now
+    - name: Build the Docker image n
       run: docker build -t sea-jena-fuseki jena-fuseki
