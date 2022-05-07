@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build -t jena-fuseki jena-fuseki
+      run: docker build -t sea-jena-fuseki jena-fuseki
