@@ -23,5 +23,6 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v3
       with:
+        context: ./jena-fuseki
         push: true
         tags: user/app:latest
