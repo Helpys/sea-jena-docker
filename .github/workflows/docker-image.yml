@@ -25,3 +25,9 @@ jobs:
       with:
         push: true
         tags: helpys/jena-fuseki:latest
+        
+    - name: DigitalOcean App Platform deployment
+    uses: digitalocean/app_action@v1.1.2  # replace this with current version from https://github.com/digitalocean/app_action/releases
+      with:
+        app_name: my_DO_app
+        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
