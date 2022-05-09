@@ -1,3 +1,5 @@
+https://testdriven.io/blog/deploying-django-to-digitalocean-with-docker-and-github-actions/
+
 Continuously Deploying Django to DigitalOcean with Docker and GitHub Actions
 
 In this tutorial, we'll look at how to configure GitHub Actions to continuously deploy a Django and Docker application to DigitalOcean.
