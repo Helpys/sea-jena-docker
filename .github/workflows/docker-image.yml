@@ -66,7 +66,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-
       - name: Build and deploy images on DigitalOcean
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -74,4 +73,5 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
             cd /app
             source .env
+            docker pull helpys/jena-fuseki
           ENDSSH
