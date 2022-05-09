@@ -39,7 +39,7 @@ jobs:
         run: |
           echo DEBUG=0 >> .env
 
-      - name: Add the private SSH key to the ssh-agent
+      - name: Add the private SSH key to the ssh-agent of the build environment
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
