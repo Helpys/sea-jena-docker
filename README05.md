@@ -1,4 +1,4 @@
-Secrets
+# Secrets
 
 DIGITAL_OCEAN_IP_ADDRESS
 
@@ -7,3 +7,10 @@ DOCKERHUB_TOKEN
 DOCKERHUB_USERNAME
 
 PRIVATE_KEY
+generated private key from the droplet
+
+PERSONAL_ACCESS_TOKEN
+digitalocean access token
+
+NAMESPACE
+github/dockerhub namespace
