@@ -1,3 +1,7 @@
+create dir
+ssh -o StrictHostKeyChecking=no root@<YOUR_INSTANCE_IP> mkdir /app
+
+
 Check the status:
 
 curl \
