@@ -74,5 +74,5 @@ jobs:
             cd /app
             source .env
             docker pull helpys/jena-fuseki
-            docker run -p 3030:3030 -e ADMIN_PASSWORD=test stain/jena-fuseki
+            docker run -p 3030:3030 -e ADMIN_PASSWORD=test stain/jena-fuseki -d
           ENDSSH
