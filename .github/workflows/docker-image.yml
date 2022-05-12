@@ -73,6 +73,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
             cd /app
             source .env
+            docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
             docker run -p 3030:3030 -e ADMIN_PASSWORD=test stain/jena-fuseki -d
           ENDSSH
