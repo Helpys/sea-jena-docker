@@ -75,5 +75,5 @@ jobs:
             source .env
             docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
-            docker run -p 3030:3030 -e ADMIN_PASSWORD=test stain/jena-fuseki -d
+            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=test stain/jena-fuseki
           ENDSSH
