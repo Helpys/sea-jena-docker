@@ -38,6 +38,7 @@ jobs:
       - name: Add environment variables to .env
         run: |
           echo DEBUG=0 >> .env
+          echo FUSEKI_PASSWORD=${{ secrets.FUSEKI_PASSWORD }} >> .env
 
       - name: Add the private SSH key to the ssh-agent of the build environment
         env:
@@ -75,5 +76,5 @@ jobs:
             source .env
             docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
-            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=goat stain/jena-fuseki
+            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD stain/jena-fuseki
           ENDSSH

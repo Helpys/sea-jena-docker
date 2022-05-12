@@ -14,3 +14,6 @@ digitalocean access token
 
 NAMESPACE
 github/dockerhub namespace
+
+FUSEKI_PASSWORD
+password for the apache jena fuseki server
