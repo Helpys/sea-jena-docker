@@ -25,6 +25,14 @@ RUN set -eux; \
     ; \
     rm -rf /var/lib/apt/lists/*
 
+### added by semantiker ###
+
+# Install Ruby.
+RUN \
+  apt-get update && \
+  apt-get install -y ruby
+
+### end ###
 
 # Update below according to https://jena.apache.org/download/
 # and checksum for apache-jena-fuseki-4.x.x.tar.gz.sha512
