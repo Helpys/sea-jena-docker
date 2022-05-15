@@ -34,6 +34,11 @@ RUN \
   apt-get update && \
   apt-get install -y ruby
 
+RUN \
+  echo yyyyyyy
+
+RUN \
+  ruby -v
 ### end ###
 
 # Update below according to https://jena.apache.org/download/
