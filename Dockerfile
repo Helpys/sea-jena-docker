@@ -27,8 +27,8 @@ RUN set -eux; \
 
 ### added by semantiker ###
 RUN \
-  xxxxx
-  
+  echo xxxxxxxx
+
 # Install Ruby.
 RUN \
   apt-get update && \
