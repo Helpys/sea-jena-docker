@@ -116,7 +116,7 @@ jobs:
             cd /app
             source .env
             echo XXXXXXX
-            docker exec $(docker ps -q); ruby -v
+            docker exec $(docker ps -q) ruby -v
             echo YYYYYYY
 
           ENDSSH
