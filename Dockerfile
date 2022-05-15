@@ -26,7 +26,9 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists/*
 
 ### added by semantiker ###
-
+RUN \
+  xxxxx
+  
 # Install Ruby.
 RUN \
   apt-get update && \
