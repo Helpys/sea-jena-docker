@@ -78,3 +78,20 @@ jobs:
             docker pull helpys/jena-fuseki
             docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD helpys/jena-fuseki
           ENDSSH
+
+  test:
+    name: Test the deployment
+    runs-on: ubuntu-latest
+    needs: deploy
+    # only runs when changes are made to the master branch
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Test jena-fuseki usind SOH
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
+            cd /app
+            source .env
+            echo testing.....
+          ENDSSH
