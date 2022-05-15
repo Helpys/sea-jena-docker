@@ -86,6 +86,12 @@ jobs:
     # only runs when changes are made to the master branch
     if: github.ref == 'refs/heads/master'
     steps:
+      - name: Checkout master
+        uses: actions/checkout@v1
+      - name: Add environment variables to .env
+        run: |
+          echo DEBUG=0 >> .env
+          echo FUSEKI_PASSWORD=${{ secrets.FUSEKI_PASSWORD }} >> .env
       - name: Test jena-fuseki usind SOH
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
