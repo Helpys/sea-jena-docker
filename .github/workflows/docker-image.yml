@@ -115,7 +115,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
             cd /app
             source .env
+            docker ps
             echo XXXXXXX
             docker ps -a -q
-            ruby -v
+
           ENDSSH
