@@ -76,7 +76,7 @@ jobs:
             source .env
             docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
-            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD -e FUSEKI_DATASET_1=ds helpys/jena-fuseki
+            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD  -e FUSEKI_DATASET_1=mydataset -e FUSEKI_DATASET_2=otherdataset helpys/jena-fuseki
           ENDSSH
 
   test:
