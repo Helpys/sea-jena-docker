@@ -102,12 +102,6 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
 
-      - name: Create subdir 'app' if it does not exists
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} mkdir -p /app
-
       - name: Test jena-fuseki usind SOH
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
