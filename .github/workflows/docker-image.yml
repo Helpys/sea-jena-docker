@@ -106,11 +106,8 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          curl -s 'http://localhost:3030/$/datasets'\
-               -H "Authorization: Basic $(echo -n admin:${ADMIN_PASSWORD} | base64)" \
-               -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8'\
-               --data "dbName=example&dbType=tdb"
-               
+          curl -s 'http://${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:3030/$/datasets' -H "Authorization: Basic $(echo -n admin:$FUSEKI_PASSWORD | base64)" -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' --data "dbName=example&dbType=tdb"
+
       - name: Test jena-fuseki usind SOH
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
