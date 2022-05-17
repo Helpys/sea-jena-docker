@@ -117,9 +117,9 @@ jobs:
             source .env
             echo XXXXXXX01
             docker exec $(docker ps -q) ruby -v
-            docker exec $(docker ps -q) ls -lat ../
+            docker exec $(docker ps -q) ls -lat
             echo YYYYYYY01
-            docker exec $(docker ps -q) ls -lat ../test
+            docker exec $(docker ps -q) ls -lat test
             echo YYYYYYY02
-            exit 1
+            exit 7
           ENDSSH

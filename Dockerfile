@@ -89,8 +89,8 @@ COPY docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh
 
 ### added by semantiker ###
-RUN mkdir test
-COPY test/* test/
+RUN mkdir $FUSEKI_HOME/test
+COPY test/* $FUSEKI_HOME/test/
 ### end ###
 
 COPY load.sh $FUSEKI_HOME/
