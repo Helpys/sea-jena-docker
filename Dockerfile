@@ -39,6 +39,14 @@ RUN \
 
 RUN \
   ruby -v
+
+RUN \
+  mkdir test \
+  COPY test test/
+
+RUN \
+  echo zzzzzzzzz
+
 ### end ###
 
 # Update below according to https://jena.apache.org/download/
