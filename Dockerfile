@@ -43,8 +43,7 @@ RUN \
 RUN \
   mkdir test
 
-RUN \
-  COPY test /test
+COPY test /test
 
 RUN \
   echo zzzzzzzzz
