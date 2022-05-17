@@ -120,5 +120,4 @@ jobs:
             docker exec $(docker ps -q) ls -lat test
             docker exec $(docker ps -q) s-put http://${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:3030/ds/data default test/turtle_example.ttl
             echo YYYYYYY02
-            exit 7
           ENDSSH
