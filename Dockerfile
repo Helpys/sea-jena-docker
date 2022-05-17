@@ -25,9 +25,8 @@ RUN set -eux; \
     ; \
     rm -rf /var/lib/apt/lists/*
 
+
 ### added by semantiker ###
-RUN \
-  echo xxxxxxxx
 
 # Install Ruby.
 RUN \
@@ -35,17 +34,7 @@ RUN \
   apt-get install -y ruby
 
 RUN \
-  echo yyyyyyy
-
-RUN \
   ruby -v
-
-RUN mkdir test
-
-COPY test /test
-
-RUN \
-  echo zzzzzzzzz
 
 ### end ###
 
@@ -99,6 +88,10 @@ COPY shiro.ini $FUSEKI_HOME/shiro.ini
 COPY docker-entrypoint.sh /
 RUN chmod 755 /docker-entrypoint.sh
 
+### added by semantiker ###
+RUN mkdir test
+COPY test/* test/
+### end ###
 
 COPY load.sh $FUSEKI_HOME/
 COPY tdbloader $FUSEKI_HOME/
