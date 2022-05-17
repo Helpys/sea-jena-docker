@@ -40,8 +40,7 @@ RUN \
 RUN \
   ruby -v
 
-RUN \
-  mkdir test
+RUN mkdir test
 
 COPY test /test
 
