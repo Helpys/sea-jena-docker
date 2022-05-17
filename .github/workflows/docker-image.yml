@@ -76,7 +76,7 @@ jobs:
             source .env
             docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
-            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD  -e FUSEKI_DATASET_1=mydataset -e FUSEKI_DATASET_2=otherdataset helpys/jena-fuseki
+            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD -e FUSEKI_DATASET_1=mydataset -e FUSEKI_DATASET_2=otherdataset helpys/jena-fuseki
           ENDSSH
 
   test:
@@ -114,6 +114,7 @@ jobs:
             docker exec $(docker ps -q) ls -lat
             docker exec $(docker ps -q) ls -lat test
             docker exec $(docker ps -q) ls -lat bin
-            docker exec $(docker ps -q) bin/s-put http://${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:3030/ds/data default test/turtle_example.ttl
+            docker exec $(docker ps -q) echo ${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}
+            docker exec $(docker ps -q) bin/s-put http://localhost:3030/ds/data default test/turtle_example.ttl
             echo YYYYYYY02
           ENDSSH
