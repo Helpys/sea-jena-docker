@@ -76,7 +76,7 @@ jobs:
             source .env
             docker stop $(docker ps -a -q);
             docker pull helpys/jena-fuseki
-            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD -e FUSEKI_DATASET_1=mydataset -e FUSEKI_DATASET_2=otherdataset helpys/jena-fuseki
+            docker run -d -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD helpys/jena-fuseki
           ENDSSH
 
   test:
@@ -102,6 +102,15 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
 
+      - name: Create datasets
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          curl -s 'http://localhost:3030/$/datasets'\
+               -H "Authorization: Basic $(echo -n admin:${ADMIN_PASSWORD} | base64)" \
+               -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8'\
+               --data "dbName=example&dbType=tdb"
+               
       - name: Test jena-fuseki usind SOH
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
