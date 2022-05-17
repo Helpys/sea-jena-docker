@@ -41,7 +41,7 @@ RUN \
   ruby -v
 
 RUN \
-  mkdir test \
+  mkdir test && \
   COPY test test/
 
 RUN \
