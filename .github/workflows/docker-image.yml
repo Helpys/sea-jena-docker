@@ -119,14 +119,12 @@ jobs:
             echo XXXXXXX01
             docker exec $(docker ps -q) ruby -v
             docker exec $(docker ps -q) ls -lat
-            docker exec $(docker ps -q) echo HELLO-WORLD 1
-            docker exec -i $(docker ps -q) echo HELLO-WORLD 2
-            docker exec -t $(docker ps -q) echo HELLO-WORLD 3
-            docker exec -it $(docker ps -q) ls -lat test
+            docker exec $(docker ps -q) echo HELLO-WORLD
+            docker exec $(docker ps -q) ls -lat test
             docker exec $(docker ps -q) ls -lat bin
             docker exec $(docker ps -q) ls -lat configuration
-            docker exec -i $(docker ps -q) echo DIGITAL_OCEAN_IP_ADDRESS ==> ${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}
-            docker exec -t $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
+            docker exec $(docker ps -q) echo DIGITAL_OCEAN_IP_ADDRESS ==> ${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}
+            docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
             docker exec $(docker ps -q) bin/s-get http://localhost:3030/example/data default
             echo YYYYYYY02
           ENDSSH
