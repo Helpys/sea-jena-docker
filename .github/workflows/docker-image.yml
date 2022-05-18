@@ -127,5 +127,6 @@ jobs:
             docker exec $(docker ps -q) ls -lat configuration
             docker exec -i $(docker ps -q) echo DIGITAL_OCEAN_IP_ADDRESS ==> ${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}
             docker exec -t $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
+            docker exec $(docker ps -q) bin/s-get http://localhost:3030/example/data default
             echo YYYYYYY02
           ENDSSH
