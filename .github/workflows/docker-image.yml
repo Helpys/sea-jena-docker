@@ -122,7 +122,7 @@ jobs:
             docker exec $(docker ps -q) ls -lat test
             docker exec $(docker ps -q) ls -lat bin
             docker exec $(docker ps -q) ls -lat configuration
-            docker exec $(docker ps -q) echo DIGITAL_OCEAN_IP_ADDRESS ==> ${{ DIGITAL_OCEAN_IP_ADDRESS }}
+            docker exec $(docker ps -q) echo DIGITAL_OCEAN_IP_ADDRESS ==> ${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}
             docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
             echo YYYYYYY02
           ENDSSH
