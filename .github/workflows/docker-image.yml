@@ -119,6 +119,9 @@ jobs:
             echo XXXXXXX01
             docker exec $(docker ps -q) ruby -v
             docker exec $(docker ps -q) ls -lat
+            docker exec $(docker ps -q) echo HELLO-WORLD 1
+            docker exec -i $(docker ps -q) echo HELLO-WORLD 2
+            docker exec -t $(docker ps -q) echo HELLO-WORLD 3
             docker exec -it $(docker ps -q) ls -lat test
             docker exec $(docker ps -q) ls -lat bin
             docker exec $(docker ps -q) ls -lat configuration
