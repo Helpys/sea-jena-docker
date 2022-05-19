@@ -1,4 +1,3 @@
 #!/bin/sh
 echo HelloWorld
-test -f && echo "yes" || echo "no"
-exit 7
+test -f && echo "ok" || echo "test fail"
