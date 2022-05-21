@@ -1,15 +1,15 @@
 #!/bin/sh
 echo "---------------------- sea test --------------------------"
 
-if [ "$#" -ne 2 ]
+if [ "$#" -ne 3 ]
 then
-  echo "usage: sea_test expected actual"
+  echo "usage: sea_test title expected actual"
   exit 1
 fi
 
-if [ "$1" = "$2" ]
+if [ "$2" = "$3" ]
 then
-  echo "test ok"
+  echo "test '$1' ok"
 else
-  echo "test fail: expected \"$1\" got \"$2\""
+  echo "test fail '$1': expected \"$2\" got \"$3\""
 fi

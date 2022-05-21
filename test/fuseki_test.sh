@@ -15,4 +15,4 @@ a=$(docker exec $(docker ps -q) bin/s-query \
 --service http://localhost:3030/example/query \
 $sparql\
  | grep -o "Green Goblin")\
- && ./test/sea_test.sh "Green Goblin" $a
+ && ./test/sea_test.sh "simply select test" "Green Goblin" $a
