@@ -3,7 +3,8 @@ echo "---------------------- sea test --------------------------"
 
 if [ "$#" -ne 3 ]
 then
-  echo "usage: sea_test title expected actual"
+  echo "error: it need 3 arguments. you have given $#"
+  echo "\nusage: sea_test title expected actual"
   exit 1
 fi
 
