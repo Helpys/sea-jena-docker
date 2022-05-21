@@ -7,25 +7,26 @@
 echo "load standard turtle example"
 docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 
-sparql="@base <http://example.org/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rel: <http://www.perceive.net/schemas/relationship/> .
+# sparql="@base <http://example.org/> .
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+# @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+# @prefix rel: <http://www.perceive.net/schemas/relationship/> .
+#
+# SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}"
 
-SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}"
+docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}" | grep -o "Green Goblin" | xargs -I % ./test/sea_test.sh % "Green Goblin" "simply select test"
 
-# docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}" | grep -o "Green Goblin" | ./test/sea_test.sh "Green Goblin" "simply select test"
-a=$(docker exec $(docker ps -q) bin/s-query \
---service http://localhost:3030/example/query \
-'SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}')
-
-echo "a='$a'"
-
-b=$(grep -o "Green Goblin" $a)
-
- ./test/sea_test.sh "Green Goblin" $a "load standard turtle example, simply select test"
-
+# a=$(docker exec $(docker ps -q) bin/s-query \
+# --service http://localhost:3030/example/query \
+# 'SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}')
+#
+# echo "a='$a'"
+#
+# b=$(grep -o "Green Goblin" $a)
+#
+#  ./test/sea_test.sh "Green Goblin" $a "load standard turtle example, simply select test"
+#
 #
 # "rdf & sparql star select test"
 #
