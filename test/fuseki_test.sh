@@ -26,7 +26,11 @@ $sparql\
 #
 echo "load rdf star turtle example"
 docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/rdf_star_example.ttl
-parql=""
+parql="PREFIX : <http://www.example.org/>
+
+SELECT ?claimer WHERE {
+   << :employee38 ?property ?value >> :accordingTo ?claimer
+}"
 
 a=$(docker exec $(docker ps -q) bin/s-query \
 --service http://localhost:3030/example/query \
