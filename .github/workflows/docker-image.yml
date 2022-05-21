@@ -120,4 +120,5 @@ jobs:
             echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX01
             docker exec $(docker ps -q) test/base_test.sh | xargs -I % test % = "ok" && echo "OKIDOKI" || echo "NONONO"
             echo YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY02
+            exit 1
           ENDSSH
