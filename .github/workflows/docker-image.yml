@@ -116,6 +116,7 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
             cd /app
             source .env
+            docker exec $(docker ps -q) test/base_test.sh
             echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX01
             docker exec $(docker ps -q) test/base_test.sh | xargs -I % test % = "ok" && echo "OKIDOKI" || echo "NONONO"
             echo YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY02

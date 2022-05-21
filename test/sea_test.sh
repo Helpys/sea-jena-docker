@@ -1,9 +1,15 @@
 #!/bin/sh
-echo HelloWorld
-docker exec $(docker ps -q) ruby -v
-docker exec $(docker ps -q) ls -lat
-docker exec $(docker ps -q) echo HELLO-WORLD
-docker exec $(docker ps -q) ls -lat test
-docker exec $(docker ps -q) ls -lat bin
-docker exec $(docker ps -q) ls -lat configuration
-test -f && echo "ok" || echo "test fail"
+echo "---------------------- sea test --------------------------"
+
+if [ "$#" -ne 2 ]
+then
+  echo "Usage: expected actual"
+  exit 1
+fi
+
+if [ $1 = $2 ]
+then
+  echo "test ok"
+else
+  echo "test fail: expected \"$1\" got \"$2\""
+fi
