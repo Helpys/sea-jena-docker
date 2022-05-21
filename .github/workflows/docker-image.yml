@@ -55,11 +55,12 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} mkdir -p /app
 
-      - name: Copy docker-compose.prod.yml file to DigitalOcean
+      - name: Copy docker-compose.prod.yml and test file to DigitalOcean
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           scp  -o StrictHostKeyChecking=no -r ./.env ./docker-compose.prod.yml root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:/app
+          scp  -o StrictHostKeyChecking=no -r ./.env ./testutil.sh root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:/app
 
       - name: Login to Docker Hub
         uses: docker/login-action@v1
@@ -116,9 +117,5 @@ jobs:
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
             cd /app
             source .env
-            echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX01
-            docker exec $(docker ps -q) test/base_test.sh
-            echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX02
-            docker exec $(docker ps -q) test/base_test.sh | grep "test fail" | wc -l
-            echo YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY03
+            ./testutil.sh
           ENDSSH
