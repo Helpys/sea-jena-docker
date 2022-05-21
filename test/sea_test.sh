@@ -7,7 +7,7 @@ then
   exit 1
 fi
 
-if [ $1 = $2 ]
+if [ "$1" = "$2" ]
 then
   echo "test ok"
 else
