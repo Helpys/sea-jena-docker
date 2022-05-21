@@ -117,6 +117,6 @@ jobs:
             cd /app
             source .env
             echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX01
-            docker exec $(docker ps -q) test/base_test.sh | xargs test 1 -eq "ok" && echo "OKIDOKI" || echo "NONONO"
+            docker exec $(docker ps -q) test/base_test.sh | xargs -I % test % = "ok" && echo "OKIDOKI" || echo "NONONO"
             echo YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY02
           ENDSSH
