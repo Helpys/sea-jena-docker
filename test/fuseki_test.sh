@@ -1,5 +1,9 @@
 #!/bin/sh
 
+
+#
+# "simply select test"
+#
 echo "load standard turtle example"
 docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 

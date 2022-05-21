@@ -1,0 +1,11 @@
+PREFIX :    <http://www.example.org/>
+
+:employee38
+    :familyName "Smith" ;
+    :jobTitle "Assistant Designer" {| :accordingTo :employee22 |} .
+
+# this is equivalent to:
+#
+# :employee38 :familyName "Smith" .
+# :employee38 :jobTitle "Assistant Designer" .
+# << :employee38 :jobTitle "Assistant Designer" >> :accordingTo :employee22 .
