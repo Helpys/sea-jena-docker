@@ -15,8 +15,12 @@ sparql="@base <http://example.org/> .
 
 SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}"
 
-docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query $sparql | grep -o "Green Goblin" | ./test/sea_test.sh "Green Goblin" "simply select test"
-
+# docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}" | grep -o "Green Goblin" | ./test/sea_test.sh "Green Goblin" "simply select test"
+a=$(docker exec $(docker ps -q) bin/s-query \
+--service http://localhost:3030/example/query \
+'SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}'\
+ | grep -o "Green Goblin")\
+ && ./test/sea_test.sh "Green Goblin" $a "simply select test"
 #
 # "rdf & sparql star select test"
 #
