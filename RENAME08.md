@@ -20,3 +20,6 @@
       docker exec $(docker ps -q) test/base_test.sh
       echo YYYYYYY02
     ENDSSH
+
+
+docker exec $(docker ps -q) test/base_test.sh | xargs -I % test % = "ok" && echo "OKIDOKI" || echo "NONONO"
