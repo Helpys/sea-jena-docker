@@ -3,6 +3,7 @@ rm -f .temp
 
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX01 >> .temp
 docker exec $(docker ps -q) test/base_test.sh >> .temp
+docker exec $(docker ps -q) test/fuseki_test.sh >> .temp
 echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX02 >> .temp
 
 cat .temp
