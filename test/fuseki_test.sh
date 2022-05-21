@@ -18,8 +18,9 @@ SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o
 a=$(docker exec $(docker ps -q) bin/s-query \
 --service http://localhost:3030/example/query \
 $sparql\
- | grep -o "Green Goblin")\
- && ./test/sea_test.sh "simply select test" "Green Goblin" $a
+ | grep -o "Green Goblin")
+
+ ./test/sea_test.sh "simply select test" "Green Goblin" $a
 
 #
 # "rdf & sparql star select test"
@@ -35,5 +36,6 @@ SELECT ?claimer WHERE {
 a=$(docker exec $(docker ps -q) bin/s-query \
 --service http://localhost:3030/example/query \
 $sparql\
- | grep -o "Green Goblin")\
- && ./test/sea_test.sh "sparql star select test" "Green Goblin" $a
+ | grep -o "Green Goblin")
+
+ ./test/sea_test.sh "sparql star select test" "Green Goblin" $a
