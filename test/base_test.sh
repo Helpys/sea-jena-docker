@@ -1,10 +1,11 @@
 #!/bin/sh
-echo HelloWorld
+echo HelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorldHelloWorld
 ruby -v
 ls -lat
-echo HELLO-WORLD
-echo "test fail"
-ls -lat test
-ls -lat bin
-ls -lat configuration
-test -f && echo "ok" || echo "test fail"
+sea_test "aaa" "aaa"
+sea_test "aaa" "aaa"
+sea_test "aaa" "aaa"
+sea_test "aaa" "aaa"
+sea_test "aaa" "bbb"
+sea_test "aaa" "aaa"
+sea_test "aaa" "aaa"
