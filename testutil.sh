@@ -10,4 +10,10 @@ cat .temp
 
 echo "x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x"
 numberOfFails=$(grep "test fail" .temp | wc -l)
-echo "number of fails = $numberOfFails"
+if [ $numberOfFails = 0 ]
+then
+  echo "Test OK"
+else
+  echo "$numberOfFails tests fails"
+  exit 1
+fi

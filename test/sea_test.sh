@@ -3,7 +3,7 @@ echo "---------------------- sea test --------------------------"
 
 if [ "$#" -ne 2 ]
 then
-  echo "Usage: expected actual"
+  echo "usage: sea_test expected actual"
   exit 1
 fi
 
