@@ -11,3 +11,10 @@ echo "----------"
 result=$(echo $result | grep -o "Green Goblin")
 echo "result grep='$result'"
 echo "----------"
+if [ $result = "Green Goblin" ]
+then
+  echo "test ok"
+else
+  echo "test not ok"
+  exit 1
+fi
