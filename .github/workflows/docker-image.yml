@@ -119,4 +119,5 @@ jobs:
             source .env
             echo "docker container"
             docker ps -a
+            docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query 'SELECT * {?s ?p ?o}'
           ENDSSH
