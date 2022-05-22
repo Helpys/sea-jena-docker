@@ -3,7 +3,7 @@
 # Test wether the string contains the pattern
 f_contains () {
    echo "Test wether the two strings are equal '$1' = '$2'"
-   if [ $1 = $2 ]
+   if [ $1 == $2 ]
    then
      echo "test ok"
    else
