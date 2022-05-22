@@ -11,10 +11,18 @@ echo "----------"
 result=$(echo $result | grep -o "Green Goblin")
 echo "result grep='$result'"
 echo "----------"
-if [ $result = "Green Goblin" ]
-then
-  echo "test ok"
-else
-  echo "test not ok"
-  exit 1
-fi
+
+f_contains "Green Goblin" $result
+
+
+# Test wether the string contains the pattern
+f_contains () {
+   echo "Test wether the two strings are equal '$1' = '$2'"
+   if [ $1 = $2 ]
+   then
+     echo "test ok"
+   else
+     echo "test not ok"
+     exit 1
+   fi
+}
