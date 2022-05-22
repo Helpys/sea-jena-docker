@@ -1,4 +1,17 @@
 #!/bin/sh
+
+# Test wether the string contains the pattern
+f_contains () {
+   echo "Test wether the two strings are equal '$1' = '$2'"
+   if [ $1 = $2 ]
+   then
+     echo "test ok"
+   else
+     echo "test not ok"
+     exit 1
+   fi
+}
+
 echo "---------------------------------"
 echo "test file: ($0)"
 echo "---------------------------------"
@@ -13,16 +26,3 @@ echo "result grep='$result'"
 echo "----------"
 
 f_contains "Green Goblin" $result
-
-
-# Test wether the string contains the pattern
-f_contains () {
-   echo "Test wether the two strings are equal '$1' = '$2'"
-   if [ $1 = $2 ]
-   then
-     echo "test ok"
-   else
-     echo "test not ok"
-     exit 1
-   fi
-}
