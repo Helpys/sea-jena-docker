@@ -1,7 +1,6 @@
 #!/bin/sh
-echo "docker container 2"
-docker ps -a
-docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query 'SELECT * {?s ?p ?o}'
+echo "docker container 3"
+bin/s-query --service http://localhost:3030/example/query 'SELECT * {?s ?p ?o}'
 
 
 

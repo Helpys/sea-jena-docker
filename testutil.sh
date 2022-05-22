@@ -1,5 +1,6 @@
 #!/bin/sh
-test/base_test.sh
+docker ps -a
+docker exec $(docker ps -q) test/base_test.sh
 
 # rm -f .temp
 #
