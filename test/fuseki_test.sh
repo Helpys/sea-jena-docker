@@ -11,6 +11,7 @@ echo "docker ps -q"
 docker ps -q
 docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 
+echo "ruby fuseki_test.sh"
 docker exec $(docker ps -q) ruby -v
 docker exec $(docker ps -q) ls -lat
 # sparql="@base <http://example.org/> .

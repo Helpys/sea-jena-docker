@@ -8,6 +8,8 @@ echo XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX02 >> .temp
 
 cat .temp
 
+echo "ruby testutil.sh"
+docker exec $(docker ps -q) ruby -v
 
 echo "x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x"
 numberOfFails=$(grep "test fail" .temp | wc -l)
