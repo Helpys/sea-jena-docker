@@ -1,5 +1,6 @@
 #!/bin/sh
-echo "docker container 3"
+echo "docker container 4 ($0)"
+bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 bin/s-query --service http://localhost:3030/example/query 'SELECT * {?s ?p ?o}'
 
 
