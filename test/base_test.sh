@@ -1,6 +1,7 @@
 #!/bin/sh
-echo "----------"
+echo "---------------------------------"
 echo "test file: ($0)"
+echo "---------------------------------"
 bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 bin/s-query --service http://localhost:3030/example/query 'SELECT * {?s ?p ?o}'
 echo "----------"
