@@ -4,7 +4,7 @@
 #
 # "simply select test"
 #
-echo "fuseki_test '$0'"
+echo "test file: '$0'"
 echo "load standard turtle example"
 docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default test/turtle_example.ttl
 
@@ -16,12 +16,10 @@ docker exec $(docker ps -q) bin/s-put http://localhost:3030/example/data default
 #
 # SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}"
 echo "exec select"
-rm -f .temp
-docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}" >> .temp
-cat .temp
-
+temp=$(docker exec $(docker ps -q) bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}")
+echo $temp
 echo "grep"
-cat .temp | grep -o "Green Goblin" | xargs -I % ./test/sea_test.sh % "Green Goblin" "simply select test"
+echo $temp | grep -o "Green Goblin" | xargs -I % ./test/sea_test.sh % "Green Goblin" "simply select test"
 
 # a=$(docker exec $(docker ps -q) bin/s-query \
 # --service http://localhost:3030/example/query \
