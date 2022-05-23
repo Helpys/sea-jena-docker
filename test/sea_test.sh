@@ -1,6 +1,13 @@
 #!/bin/sh
 echo "Hello World"
 
+#
+#
+f_escape() {
+$1
+}
+
+
 
 # Test wether the string contains the pattern
 # parameters: string, pattern
@@ -41,6 +48,12 @@ fi
 
 f_match $s1 $s2
 f_contains $s1 "go"
+
+
+text="hello world"
+echo "$text"
+text=$(f_escape $text)
+echo "$text"
 
 
 # echo "---------------------- sea test --------------------------"
