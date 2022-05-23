@@ -2,10 +2,13 @@
 
 # Test wether the string contains the pattern
 # parameters: string, pattern
+# Test wether the string contains the pattern
+# parameters: string, pattern
 f_contains () {
-   echo "Test wether the strings contains the pattern '$1' = '$2'"
+   echo "Test wether the string contains the pattern string:'$1' pattern:'$2'"
+   echo $1 | grep -c $2
    occurences=$(echo $1 | grep -c $2)
-   if [ $occurences >= 1 ]
+   if [ $occurences -gt 0 ]
    then
      echo "test ok (occurences:$occurences)"
    else
