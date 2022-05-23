@@ -1,4 +1,20 @@
 #!/bin/sh
+
+# Test wether the string contains the pattern
+# parameters: string, pattern
+f_contains () {
+   echo "Test wether the string contains the pattern string:'$1' pattern:'$2'"
+   echo $1 | grep -c $2
+   occurences=$(echo $1 | grep -c $2)
+   if [ $occurences -gt 0 ]
+   then
+     echo "test ok (occurences:$occurences)"
+   else
+     echo "test not ok\nthe string '$1' does not contain the pattern:'$2'"
+     exit 1
+   fi
+}
+
 echo "---------------------------------"
 echo "test file: ($0)"
 echo "---------------------------------"
@@ -8,8 +24,15 @@ sparql="PREFIX : <http://www.example.org/>
 SELECT ?claimer WHERE {
    << :employee38 ?property ?value >> :accordingTo ?claimer
 }"
-bin/s-query --service http://localhost:3030/example/query "$sparql"
+result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
+echo "result s-query='$result'"
 echo "----------"
+f_contains $result "http://www.example.org/employee22"
+echo "----------"
+
+
+
+
 #
 # "simply select test"
 #

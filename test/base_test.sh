@@ -2,8 +2,6 @@
 
 # Test wether the string contains the pattern
 # parameters: string, pattern
-# Test wether the string contains the pattern
-# parameters: string, pattern
 f_contains () {
    echo "Test wether the string contains the pattern string:'$1' pattern:'$2'"
    echo $1 | grep -c $2
