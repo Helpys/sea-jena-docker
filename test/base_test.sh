@@ -3,6 +3,11 @@
 # Test wether the string contains the pattern
 # parameters: string, pattern
 f_contains () {
+   echo "\$_:$_"
+   echo "\$#:$#"
+   echo "\$0:$0"
+   echo "\$1:$1"
+   grep -c $1
    echo "Test wether the string contains the pattern string:'$1' pattern:'$2'"
    echo $1 | grep -c $2
    occurences=$(echo $1 | grep -c $2)
