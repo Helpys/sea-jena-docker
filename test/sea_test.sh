@@ -22,6 +22,7 @@ assert_contains () {
   else
     echo "assert_contains assertion-fail, pattern '$1' not found"
     echo $total
+    exit 1
   fi
 }
 
