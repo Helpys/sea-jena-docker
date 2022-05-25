@@ -1,10 +1,10 @@
 #!/bin/sh
-source sea_test.sh
-
+source ./test/sea_test.sh
+source ./test/example.sh
 
 
 echo "-------------------------------------------------------------------------------"
-ls -lat
+ls -lat ./test
 echo "-------------------------------------------------------------------------------"
 echo "test file: ($0)"
 cat ./test/turtle_example.ttl | assert_contains "w2ww"
