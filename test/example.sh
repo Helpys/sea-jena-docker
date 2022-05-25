@@ -1,6 +1,8 @@
 #!/bin/sh
+echo "include $0"
+ls -la /bin/sh
 
-assert_contains() {
+assert_contains () {
   # echo "-----------------  assert_contains  -----------------"
   # echo "\$_:$_"
   # echo "\$#:$#"
@@ -21,4 +23,8 @@ assert_contains() {
     echo "assert_contains assertion-fail, pattern '$1' not found"
     echo $total
   fi
+}
+
+assert_contains () {
+  echo "--------------------------"
 }

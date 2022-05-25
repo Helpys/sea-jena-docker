@@ -1,6 +1,6 @@
 #!/bin/sh
 source ./test/sea_test.sh
-source ./test/example.sh
+# source ./test/example.sh
 
 
 echo "-------------------------------------------------------------------------------"
