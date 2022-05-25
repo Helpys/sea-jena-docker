@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/dash
 . ./test/sea_test.sh
 
 
