@@ -1,4 +1,4 @@
-PREFIX :    <http://www.example.org/>
+@base <http://www.example.org/> .
 
 :employee38
     :familyName "Smith" ;

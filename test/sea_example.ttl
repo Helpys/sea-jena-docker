@@ -1,5 +1,4 @@
-PREFIX :    <http://www.example.org/>
-
+@base <http://www.example.org/> .
 @prefix seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 :employee38
