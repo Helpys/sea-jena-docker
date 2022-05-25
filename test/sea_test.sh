@@ -9,10 +9,14 @@ assert_contains () {
   # echo "\$0:$0"
   # echo "\$1:$1"
   # echo "-----------------------------------------------------"
+  occurence=$((0))
+  lines=$((0))
+
   while read line
   do
     occurence=$(echo $line | grep -c $1)
     occurences=$(( $occurences + $occurence ))
+    lines=$(( $lines + 1 ))
     total="${total}$line\n"
   done
 
@@ -23,6 +27,7 @@ echo "occurences:'$occurences'"
     echo "assert_contains ok, found $occurences occurence(s)"
   else
     echo "assert_contains assertion-fail, pattern '$1' not found"
+    echo "red '$lines' line(s)"
     echo $total
     exit 1
   fi
