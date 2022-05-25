@@ -1,0 +1,10 @@
+PREFIX :    <http://www.example.org/>
+
+@prefix seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:employee38
+    :familyName "Smith" {|  seaa:transactionTime "2020-01-01T17:07:07+02:00"^^xsd:dateTime ;
+                            seaa:decisionTime "2020-01-01T17:07:07+02:00"^^xsd:dateTime ;
+                            seaa:validFrom "2020-01-01T17:07:07+02:00"^^xsd:dateTime ;
+                            seaa:validTo "2020-01-01T17:07:07+02:00"^^xsd:dateTime ;
+                            seaa:deletionTime "2020-01-01T17:07:07+02:00"^^xsd:dateTime |} .
