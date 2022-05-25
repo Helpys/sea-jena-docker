@@ -16,10 +16,7 @@ assert_contains () {
     total="${total}$line\n"
   done
 
-  re='^[0-9]+$'
-  if ! [[ $occurences =~ $re ]] ; then
-     echo "error: Not a number" >&2; exit 1
-  fi
+echo "occurences:'$occurences'"
 
   if [ $occurences -gt 0 ]
   then
