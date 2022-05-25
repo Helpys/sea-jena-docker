@@ -1,5 +1,5 @@
 #!/bin/sh
-source ./test/sea_test.sh
+. ./test/sea_test.sh
 
 echo "-------------------------------------------------------------------------------"
 echo "test file: ($0)"
