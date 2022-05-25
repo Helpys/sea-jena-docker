@@ -18,7 +18,7 @@ assert_contains() {
   then
     echo "assert_contains ok, found $occurences occurence(s)"
   else
-    echo "assert_contains assertion-fail, patter '$1' not found"
+    echo "assert_contains assertion-fail, pattern '$1' not found"
     echo $total
   fi
 }
