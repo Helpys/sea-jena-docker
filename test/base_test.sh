@@ -1,5 +1,5 @@
 #!/bin/sh
-source test/sea_test.sh --source-only
+source ./test/sea_test.sh
 
 
 

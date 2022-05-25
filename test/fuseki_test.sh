@@ -1,19 +1,5 @@
 #!/bin/sh
-
-# Test wether the string contains the pattern
-# parameters: string, pattern
-f_contains () {
-   echo "Test wether the string contains the pattern string:'$1' pattern:'$2'"
-   echo $1 | grep -c $2
-   occurences=$(echo $1 | grep -c $2)
-   if [ $occurences -gt 0 ]
-   then
-     echo "test ok (occurences:$occurences)"
-   else
-     echo "test not ok\nthe string '$1' does not contain the pattern:'$2'"
-     exit 1
-   fi
-}
+source ./test/sea_test.sh
 
 echo "---------------------------------"
 echo "test file: ($0)"
