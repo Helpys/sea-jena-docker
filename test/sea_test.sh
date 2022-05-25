@@ -1,19 +1,31 @@
 #!/bin/sh
 
-f_contains() {
-  echo "-----------------  f_contains  ----------------------"
-  echo "\$_:$_"
-  echo "\$#:$#"
-  echo "\$0:$0"
-  echo "\$1:$1"
-  echo "-----------------------------------------------------"
+assert_contains() {
+  # echo "-----------------  assert_contains  -----------------"
+  # echo "\$_:$_"
+  # echo "\$#:$#"
+  # echo "\$0:$0"
+  # echo "\$1:$1"
+  # echo "-----------------------------------------------------"
   while read line
   do
-    occurences+=$(echo $line | grep -c $1)
-    echo "-----------------------------------------------------"
+    occurence=$(echo $line | grep -c $1 | bc)
+    occurences=$(( $occurences + $occurence ))
     total="${total}$line\n"
   done
-  echo "-------------------$occurences----------------------------"
-echo $total
+
+  if [ $occurences -gt 0 ]
+  then
+    echo "assert_contains ok, found $occurences occurence(s)"
+  else
+    echo "assert_contains assertion-fail, patter '$1' not found"
+    echo $total
+  fi
 }
-cat ./test/turtle_example.ttl | f_contains "Goblin"
+
+#
+# usage:
+# assert_contains stream_input string_to_match
+# Example:
+# cat ./test/turtle_example.ttl | assert_contains "www"
+#
