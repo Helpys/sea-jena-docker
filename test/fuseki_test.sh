@@ -6,7 +6,9 @@ echo "test file: ($0)"
 
 echo "-------------------------------------------------------------------------------"
 bin/s-put http://localhost:3030/example/data default test/rdf_star_example.ttl
-sparql="PREFIX : <http://www.example.org/>
+sparql="BASE <http://www.example.org/>
+PREFIX : <http://example.org/>
+
 SELECT ?claimer WHERE {
    << :employee38 ?property ?value >> :accordingTo ?claimer
 }"
