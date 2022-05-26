@@ -14,4 +14,4 @@ echo $result | assert_contains "Spiderman"
 
 echo "-------------------------------------------------------------------------------"
 result=$(bin/s-query --service http://localhost:3030/example/query "SELECT * {<http://example.org/#green-goblin> <http://xmlns.com/foaf/0.1/name> ?o}")
-echo $result | assert_contains "Green Goblin"
+echo $result | assert_contains "Green[[:space:]]Goblin"
