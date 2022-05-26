@@ -2,10 +2,6 @@
 echo "include $0"
 # ls -la /bin/dash
 
-fallback_command () {
-  echo "assert_contains assertion-fail grep failed"
-  exit 1
-}
 
 assert_contains () {
   echo "=================  assert_contains  ================="
@@ -20,7 +16,7 @@ assert_contains () {
 
   while read line
   do
-    occurence=echo $line | grep -c $1 || fallback_command
+    occurence=echo $line | grep -c $1 || -1
     occurences=$(( $occurences + $occurence ))
     lines=$(( $lines + 1 ))
     total="${total}$line\n"
