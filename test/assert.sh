@@ -1,6 +1,6 @@
 #!/bin/dash
 echo "include $0"
-ls -la /bin/dash
+# ls -la /bin/dash
 
 fallback_command () {
   echo "assert_contains assertion-fail grep failed"

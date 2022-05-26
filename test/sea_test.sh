@@ -7,5 +7,8 @@ fallback_command () {
 }
 
 # echo "xxxx Green Goblin XXXXXX" | assert_contains "Green[[:space:]]Goblin"
-occurence=echo "xxxx Green Goblin XXXXXX" | grep -c "Green Goblin" || fallback_command
-echo "END"
+xa="Green"
+echo "xxxx Green Goblin XXXXXX" | grep -c $xa || fallback_command
+
+# || fallback_command
+# echo "END"
