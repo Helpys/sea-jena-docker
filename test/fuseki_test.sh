@@ -1,5 +1,5 @@
 #!/bin/dash
-. ./test/sea_test.sh
+. ./test/assert.sh
 
 echo "-------------------------------------------------------------------------------"
 echo "test file: ($0)"
@@ -11,4 +11,4 @@ SELECT ?claimer WHERE {
    << :employee38 ?property ?value >> :accordingTo ?claimer
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-assert_contains $result "employee22"
+echo $result | assert_contains "employee22"
