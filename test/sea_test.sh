@@ -24,7 +24,7 @@ echo "occurences:'$occurences'"
 
   if [ $occurences -gt 0 ]
   then
-    echo "assert_contains ok, found $occurences occurence(s)"
+    echo "assert_contains ok, found $occurences occurence(s) of the pattern '$1'"
   else
     echo "assert_contains assertion-fail, pattern '$1' not found"
     echo "red '$lines' line(s)"
