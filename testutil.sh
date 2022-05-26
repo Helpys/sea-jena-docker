@@ -1,8 +1,8 @@
 #!/bin/sh
 docker ps -a
-docker exec $(docker ps -q) test/base_test.sh
+docker exec $(docker ps -q) test/base_test.sh | echo "HELLO DOCKER"
 echo "last commands exit code:'echo $?'"
-docker exec $(docker ps -q) test/fuseki_test.sh
+docker exec $(docker ps -q) test/fuseki_test.sh | echo "last commands exit code:'echo $?'"
 echo "last commands exit code:'echo $?'"
 
 
