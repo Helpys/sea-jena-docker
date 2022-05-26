@@ -11,4 +11,7 @@ SELECT ?claimer WHERE {
    << :employee38 ?property ?value >> :accordingTo ?claimer
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
+echo "************************************************"
+echo $result
+echo "************************************************"
 echo $result | assert_contains "employee22"

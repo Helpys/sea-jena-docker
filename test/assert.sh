@@ -25,9 +25,9 @@ assert_contains () {
 
   if [ $occurences -gt 0 ]
   then
-    echo "assert_contains ok, found $occurences occurence(s) of the pattern '$1'"
+    echo "assert_contains \e[0;32mok\e[0m, found $occurences occurence(s) of the pattern '$1'"
   else
-    echo "assert_contains assertion-fail, pattern '$1' not found"
+    echo "assert_contains \e[0;31massertion-fail\e[0m, pattern '$1' not found"
     echo "red '$lines' line(s)"
     echo $total
     exit 1
