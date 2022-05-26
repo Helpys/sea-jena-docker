@@ -6,6 +6,8 @@ docker exec $(docker ps -q) test/base_test.sh >> .temp
 echo "" >> .temp
 docker exec $(docker ps -q) test/fuseki_test.sh >> .temp
 echo "" >> .temp
+docker exec $(docker ps -q) test/sea_test.sh >> .temp
+echo "" >> .temp
 
 cat .temp
 
