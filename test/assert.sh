@@ -1,7 +1,6 @@
 #!/bin/dash
 echo "include $0"
-# ls -la /bin/dash
-
+ls -la /bin/dash
 
 assert_contains () {
   echo "=================  assert_contains  ================="
@@ -16,7 +15,7 @@ assert_contains () {
 
   while read line
   do
-    occurence=echo $line | grep -c $1 || -1
+    occurence=$(echo $line | grep -c $1)
     occurences=$(( $occurences + $occurence ))
     lines=$(( $lines + 1 ))
     total="${total}$line\n"
