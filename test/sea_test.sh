@@ -15,4 +15,4 @@ SELECT ?decisionTime WHERE {
    << :employee38 :familyName \"Smith\" >> seaa:decisionTime ?decisionTime
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-echo $result | assert_contains "employee22"
+echo $result | assert_contains "2020-01-01T17:07:07+02:00"
