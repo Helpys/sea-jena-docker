@@ -10,3 +10,8 @@
     # :employee38 :familyName "Smith" .
     # :employee38 :jobTitle "Assistant Designer" .
     # << :employee38 :jobTitle "Assistant Designer" >> :accordingTo :employee22 .
+
+:employee39
+    :familyName "Foo" ;
+    :jobTitle "Assistant Designer" {| :accordingTo :employee22 ;
+                                      :verifiedBy :employee11 |} .
