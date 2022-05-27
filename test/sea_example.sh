@@ -25,7 +25,7 @@ PREFIX seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?employee WHERE {
-   << ?employee :familyName "Smith" >> seaa:transactionTime ?transactionTime
+   << ?employee :familyName \"Smith\" >> seaa:transactionTime ?transactionTime
   FILTER(?transactionTime < NOW() )
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
