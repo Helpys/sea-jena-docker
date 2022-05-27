@@ -29,4 +29,7 @@ SELECT ?employee WHERE {
   FILTER(?transactionTime < NOW() )
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-echo $result | assert_contains "employee11"
+echo "*********************************************"
+echo $result
+echo "*********************************************"
+echo $result | assert_contains "employee38"
