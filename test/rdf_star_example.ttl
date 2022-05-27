@@ -12,6 +12,7 @@
     # << :employee38 :jobTitle "Assistant Designer" >> :accordingTo :employee22 .
 
 :employee39
-    :familyName "Foo" ;
+    :familyName "Foo" {| :enteredBy :employee77 ;
+                         :castBy :employee11 |} ;
     :jobTitle "Assistant Designer" {| :accordingTo :employee22 ;
                                       :verifiedBy :employee11 |} .
