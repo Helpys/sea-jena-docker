@@ -3,14 +3,14 @@
 @prefix seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
-<< << :employee35 :level "Junior" >> seaa:eventId 100000 >>
+<< << :employee35 :level "Junior" >> seaa:eventId "d5a2ca09-f974-46f6-b742-bcca29dbafbe" >>
   seaa:transactionTime "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:decisionTime "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validTo "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:deletionTime "2021-06-01T00:00:00+02:00"^^xsd:dateTime .
 
-<< << :employee35 :level "Junior" >> seaa:eventId 100001 >>
+<< << :employee35 :level "Junior" >> seaa:eventId "cba995ed-4a4e-468a-8c55-4c86a9845572" >>
   seaa:transactionTime "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:decisionTime "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;

@@ -17,8 +17,17 @@ cat .temp
 numberOfFails=$(grep "assertion-fail" .temp | wc -l)
 if [ $numberOfFails = 0 ]
 then
-  echo "all tests OK"
+  echo "term 'assertion-fail' not found. All tests OK"
 else
-  echo "$numberOfFails tests fails"
+  echo "$numberOfFails \e[0;31mtests fails\e[0m"
+  exit 1
+fi
+
+numberOfFails=$(grep "failed" .temp | wc -l)
+if [ $numberOfFails = 0 ]
+then
+  echo "term 'failed' not found. All tests OK"
+else
+  echo "$numberOfFails \e[0;31mterm 'failed' found. Not Ok\e[0m"
   exit 1
 fi
