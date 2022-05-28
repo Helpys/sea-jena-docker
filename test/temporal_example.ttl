@@ -4,25 +4,64 @@
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 # ----------------- time 1 -- 2020-01-01T00:00:00+02:00 --------------------------------
+#      2020       |     2021      -->
+#      Junior     |     Senior    -->
 
 << << :employee34 :level "Junior" >> seaa:eventId "00000000-0000-0000-0000-000000000001" >>
   seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
-  seaa:deletionTime     "2021-06-01T00:00:00+02:00"^^xsd:dateTime .
+  seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << :employee34 :level "Senior" >> seaa:eventId "00000000-0000-0000-0000-000000000002" >>
   seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom        "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
-  seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3022-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:deletionTime     "2021-06-01T00:00:00+02:00"^^xsd:dateTime .
-# ----------------- time 2 -- 2021-06-01T00:00:00+02:00 --------------------------------
 
-<< << :employee34 :level "Junior" >> seaa:eventId "00000000-0000-0000-0000-000000000003" >>
-  seaa:transactionTime  "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
-  seaa:decisionTime     "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+
+# ----------------- time 2 -- 2021-06-01T00:00:00+02:00 --------------------------------
+#      2020       |     2021      |     2022    -->
+#      Junior     |     Senior    |     Expert  -->
+<< << :employee34 :level "Senior" >> seaa:eventId "00000000-0000-0000-0000-000000000003" >>
+  seaa:transactionTime  "2021-06-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2021-06-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom        "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << :employee34 :level "Expert" >> seaa:eventId "00000000-0000-0000-0000-000000000004" >>
+  seaa:transactionTime  "2020-06-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3023-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "2021-08-01T00:00:00+02:00"^^xsd:dateTime .
+
+# ----------------- time 3 -- 2021-07-01T00:00:00+02:00 --------------------------------
+#      2020           | 2021      |     2022    -->
+#      Junior         | Senior    |     Expert  -->
+<< << :employee34 :level "Junior" >> seaa:eventId "00000000-0000-0000-0000-000000000005" >>
+  seaa:transactionTime  "2021-07-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-08-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "3021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << :employee34 :level "Senior" >> seaa:eventId "00000000-0000-0000-0000-000000000006" >>
+  seaa:transactionTime  "2021-07-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2021-08-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "2021-08-01T00:00:00+02:00"^^xsd:dateTime .
+
+# ----------------- time 3 -- 2021-08-01T00:00:00+02:00 --------------------------------
+#      2020           |     2022    -->
+#      Junior         |     Expert  -->
+<< << :employee34 :level "Expert" >> seaa:eventId "00000000-0000-0000-0000-000000000007" >>
+  seaa:transactionTime  "2021-08-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2021-08-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2021-08-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3023-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:deletionTime     "3021-06-01T00:00:00+02:00"^^xsd:dateTime .
