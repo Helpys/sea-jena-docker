@@ -70,4 +70,4 @@ SELECT ?eventId ?level ?link ?value WHERE {
    << << :employee34 :level ?level >> seaa:eventId ?eventId >> ?link ?value .
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-echo $result | assert_contains "JUNIOR"
+echo $result | assert_contains "Junior"
