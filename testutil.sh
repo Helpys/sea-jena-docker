@@ -8,6 +8,8 @@ docker exec $(docker ps -q) test/rdf_star_example.sh >> .temp
 echo "" >> .temp
 docker exec $(docker ps -q) test/sea_example.sh >> .temp
 echo "" >> .temp
+docker exec $(docker ps -q) test/temporal_example.sh >> .temp
+echo "" >> .temp
 
 cat .temp
 
