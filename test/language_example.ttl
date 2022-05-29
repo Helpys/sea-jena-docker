@@ -1,0 +1,33 @@
+@base <http://www.example.org/> .
+@prefix : <http://example.org/> .
+@prefix seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+
+<< << :animal34 :name "Schmetterling"@de-CH >> seaa:eventId "00000000-0000-0000-0001-000000000001" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "3021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << :animal34 :name "Sommervogel"@de >> seaa:eventId "00000000-0000-0000-0001-000000000002" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "3021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << :animal34 :name "butterfly"@en >> seaa:eventId "00000000-0000-0000-0001-000000000003" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "3021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << :animal34 :name "Papillon"@fr >> seaa:eventId "00000000-0000-0000-0001-000000000004" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "3021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "3021-07-01T00:00:00+02:00"^^xsd:dateTime .

@@ -10,6 +10,8 @@ docker exec $(docker ps -q) test/sea_example.sh >> .temp
 echo "" >> .temp
 docker exec $(docker ps -q) test/temporal_example.sh >> .temp
 echo "" >> .temp
+docker exec $(docker ps -q) test/language_example.sh >> .temp
+echo "" >> .temp
 
 cat .temp
 
