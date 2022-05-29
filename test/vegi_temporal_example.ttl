@@ -13,21 +13,21 @@
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Vegetable> rdfs:subClassOf rdfs:Resource >> seaa:eventId "00000000-0000-0000-0002-000000000002" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Vegetable> rdfs:label "Vegetable"@en >> seaa:eventId "00000000-0000-0000-0002-000000000003" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 
@@ -37,21 +37,21 @@ seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Legumes> rdfs:subClassOf <Vegetable> >> seaa:eventId "00000000-0000-0000-0002-000000000005" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Legumes> rdfs:label "Hülsenfrüchte"@de >> seaa:eventId "00000000-0000-0000-0002-000000000006" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 
@@ -61,20 +61,28 @@ seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Mushroom> rdfs:subClassOf <Vegetable> >> seaa:eventId "00000000-0000-0000-0002-000000000008" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "2021-01-01T00:00:00+02:00"^^xsd:dateTime . # <-- deletion
 
 << << <Mushroom> rdfs:label "Vegetable"@en >> seaa:eventId "00000000-0000-0000-0002-000000000009" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
-seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
-# ---------------------------------------------------------------------------------------
+
+# ----------------- time 1 -- 2021-01-01T00:00:00+02:00 --------------------------------
+# Mushroom
+<< << <Mushroom> rdfs:subClassOf rdfs:Resource >> seaa:eventId "00000000-0000-0000-0002-000000000008" >>
+seaa:transactionTime  "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
