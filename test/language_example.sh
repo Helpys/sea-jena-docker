@@ -9,6 +9,7 @@ echo "test file: ($0)"
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
 bin/s-put http://localhost:3030/example/data default test/language_example.ttl
+bin/s-put http://localhost:3030/example/data default test/seaa-ontology.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
 PREFIX seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>

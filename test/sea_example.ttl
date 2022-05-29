@@ -1,6 +1,6 @@
 @base <http://www.example.org/> .
 @prefix : <http://example.org/> .
-@prefix seaa: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix seaa: <http://www.seaa.ch/ontologies/2022/5/seaa-statement#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
 :employee38
