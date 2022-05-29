@@ -19,5 +19,4 @@ SELECT ?name ?lang WHERE {
   BIND(lang(?name) as ?lang)
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-echo $result
 echo $result | assert_contains "Schmetterling"
