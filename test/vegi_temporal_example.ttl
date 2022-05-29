@@ -7,25 +7,23 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 
 # ----------------- time 1 -- 2020-01-01T00:00:00+02:00 --------------------------------
-#      2020           |
-#      Vegetables     |
+# Vegetables
 
-<Vegetable>
-      rdf:type seaa:SeaaClass ;
-      rdfs:subClassOf rdfs:Resource ;
-      rdfs:label "Vegetable"@en ;
+<Vegetable> rdf:type seaa:SeaaClass ;
+<Vegetable> rdfs:subClassOf rdfs:Resource ;
+<Vegetable> rdfs:label "Vegetable"@en ;
 
-<Mushroom>
-      rdf:type seaa:SeaaClass ;
-      rdfs:subClassOf rdfs:Resource ;
-      rdfs:label "Vegetable"@en ;
+<Legumes> rdf:type seaa:SeaaClass ;
+<Legumes> rdfs:subClassOf <Vegetable> ;
+<Legumes> rdfs:label "Hülsenfrüchte"@de ;
 
-<Legumes>
-      rdf:type seaa:SeaaClass ;
-      rdfs:subClassOf rdfs:Resource ;
-      rdfs:label "Hülsenfrüchte"@de ;
+<Mushroom> rdf:type seaa:SeaaClass ;
+<Mushroom> rdfs:subClassOf <Vegetable> ;
+<Mushroom> rdfs:label "Vegetable"@en ;
 
-<< << :onion :level "Junior" >> seaa:eventId "00000000-0000-0000-0000-000000000001" >>
+# ---------------------------------------------------------------------------------------
+
+<< << :onion :level "Junior" >> seaa:eventId "00000000-0000-0000-0002-000000000001" >>
   seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
   seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
