@@ -19,4 +19,5 @@ SELECT ?name (lang(?name) as ?lang) WHERE {
    << << :animal34 :name ?name >> seaa:eventId ?eventId >> seaa:transactionTime ?value .
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
+echo $result
 echo $result | assert_contains "Schmetterling"

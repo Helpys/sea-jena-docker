@@ -1,0 +1,23 @@
+@prefix : <http://www.seaa.ch/unused-prefix#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix user: <http://www.seaa.ch/example/user/> .
+@prefix seaa: <http://www.seaa.ch/base/> .
+
+@base <http://www.seaa.ch/base/> .
+
+
+<SeaaIndividual>
+      rdf:type rdfs:Class ;
+      rdfs:subClassOf seaa:SeaaResource ;
+      # rdfs:subClassOf rdfs:Resource ;
+      # rdfs:subClassOf owl:Thing ;
+      # rdfs:subClassOf owl:NamedIndividual ;
+
+      rdfs:label "SEAA Individual Resource"@de ;
+      rdfs:label "SEAA Individual Resource"@en ;
+      rdfs:comment "Superclass of all SEAA Individual Resources."@en .
+      # rdfs:label
+      # rdfs:description

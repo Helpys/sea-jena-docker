@@ -1,0 +1,36 @@
+@prefix : <http://www.seaa.ch/unused-prefix#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix user: <http://www.seaa.ch/example/user/> .
+@prefix seaa: <http://www.seaa.ch/base/> .
+
+@base <http://www.seaa.ch/base/> .
+
+
+<SeaaResource>
+      rdf:type rdfs:Class ;
+      rdfs:subClassOf rdfs:Resource ;
+
+      rdfs:label "SEAA Resource"@de ;
+      rdfs:label "SEAA Resource"@en ;
+      rdfs:comment "Superclass of all SEAA Resources."@en .
+
+# rdfs:label
+# rdfs:description
+<owner>
+      a rdf:Property ;
+      rdfs:label "user"@en ;
+      rdfs:label "Benutzer/Owner"@de ;
+      rdfs:comment "Der Benutzer/Owner v. d. R." ;
+      rdfs:domain seaa:SeaaResource ;
+      rdfs:range user:User .
+
+<group>
+      a rdf:Property ;
+      rdfs:label "group"@en ;
+      rdfs:label "Gruppe/Owner"@de ;
+      rdfs:comment "Die Gruppe/Owner v. d. R." ;
+      rdfs:domain seaa:SeaaResource ;
+      rdfs:range seaa:SeaaResource .
