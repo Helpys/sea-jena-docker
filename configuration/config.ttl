@@ -42,15 +42,17 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
         fuseki:operation fuseki:upload ;
         fuseki:name "upload"
     ] ;
-    fuseki:dataset :dataset ;
-    .
 
     ## SHACL service - see https://jena.apache.org/documentation/shacl/
     ## /dataset/shacl
     fuseki:endpoint [
-        fuseki:operation fuseki:shacl ;
-        fuseki:name "shacl"
+    fuseki:operation fuseki:shacl ;
+    fuseki:name "shacl"
     ] ;
+
+    fuseki:dataset :dataset ;
+    .
+
 
 # Transactional in-memory dataset.
 :dataset rdf:type ja:MemoryDataset ;
