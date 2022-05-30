@@ -37,4 +37,4 @@ SELECT DISTINCT ?s1 ?s2 ?s3 WHERE {
   }
 }"
 result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
-echo $result | assert_contains "vegivegivegivegivegivegi"
+echo $result | assert_contains "Legumes"
