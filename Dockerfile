@@ -90,6 +90,7 @@ RUN chmod 755 /docker-entrypoint.sh
 
 ### added by semantiker ###
 COPY configuration/config.ttl $FUSEKI_HOME/
+COPY configuration/config.ttl $FUSEKI_BASE/
 
 RUN mkdir $FUSEKI_HOME/test
 COPY test/* $FUSEKI_HOME/test/
@@ -111,6 +112,11 @@ WORKDIR $FUSEKI_HOME
 # Make sure we start with empty /fuseki
 RUN rm -rf $FUSEKI_BASE
 VOLUME $FUSEKI_BASE
+
+## added by semantiker ###
+COPY configuration/config.ttl $FUSEKI_HOME/
+COPY configuration/config.ttl $FUSEKI_BASE/
+
 
 EXPOSE 3030
 ENTRYPOINT ["/usr/bin/tini", "--", "/docker-entrypoint.sh"]
