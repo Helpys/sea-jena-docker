@@ -38,11 +38,11 @@ else
   exit 1
 fi
 
-numberOfFails=$(grep "ERROR" .temp | wc -l)
+numberOfFails=$(grep "Error" .temp | wc -l)
 if [ $numberOfFails = 0 ]
 then
-  echo "term 'ERROR' not found. All tests OK"
+  echo "term 'Error' not found. All tests OK"
 else
-  echo "$numberOfFails \e[0;31mterm 'ERROR' found. Not Ok\e[0m"
+  echo "$numberOfFails \e[0;31mterm 'Error' found. Not Ok\e[0m"
   exit 1
 fi
