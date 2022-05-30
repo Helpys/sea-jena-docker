@@ -45,10 +45,16 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
     fuseki:dataset :dataset ;
     .
 
+    ## SHACL service - see https://jena.apache.org/documentation/shacl/
+    ## /dataset/shacl
+    fuseki:endpoint [
+        fuseki:operation fuseki:shacl ;
+        fuseki:name "shacl"
+    ] ;
+
 # Transactional in-memory dataset.
 :dataset rdf:type ja:MemoryDataset ;
     ## Optional load with data on start-up
     ## ja:data "data1.trig";
     ## ja:data "data2.trig";
     .
-   
