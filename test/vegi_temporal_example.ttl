@@ -8,7 +8,6 @@
 
 # ----------------- time 1 -- 2020-01-01T00:00:00+02:00 --------------------------------
 # Vegetables
-
 << << <Vegetable> rdf:type seaa:SeaaClass >> seaa:eventId "00000000-0000-0000-0002-000000000001" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -71,7 +70,7 @@ seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "2021-01-01T00:00:00+02:00"^^xsd:dateTime . # <-- deletion
 
-<< << <Mushroom> rdfs:label "Vegetable"@en >> seaa:eventId "00000000-0000-0000-0002-000000000009" >>
+<< << <Mushroom> rdfs:label "Mushroom"@en >> seaa:eventId "00000000-0000-0000-0002-000000000009" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -80,9 +79,32 @@ seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
 
 # ----------------- time 1 -- 2021-01-01T00:00:00+02:00 --------------------------------
 # Mushroom
-<< << <Mushroom> rdfs:subClassOf rdfs:Resource >> seaa:eventId "00000000-0000-0000-0002-000000000008" >>
+<< << <Mushroom> rdfs:subClassOf rdfs:Resource >> seaa:eventId "00000000-0000-0000-0002-000000000010" >>
 seaa:transactionTime  "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
+
+# ----------------- time 1 -- 2020-01-01T00:00:00+02:00 --------------------------------
+# Schlauchpilze
+<< << <Schlauchpilze> rdf:type seaa:SeaaClass >> seaa:eventId "00000000-0000-0000-0002-000000000011" >>
+seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << <Schlauchpilze> rdfs:subClassOf <Mushroom> >> seaa:eventId "00000000-0000-0000-0002-000000000012" >>
+seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << <Schlauchpilze> rdfs:label "Schlauchpilze"@de >> seaa:eventId "00000000-0000-0000-0002-000000000013" >>
+seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2022-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-01-01T00:00:00+02:00"^^xsd:dateTime .
