@@ -1,0 +1,32 @@
+@prefix : <http://www.seaa.ch/unused-prefix#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix sx: <http://www.seaa.ch/shacl/#> .
+
+@base <http://www.seaa.ch/test/> .
+
+
+<Bar>
+    a sh:NodeShape ;
+    sh:targetClass <Bar> ;
+    rdfs:label "Bar's node shape" ;
+    sh:property [
+      sh:path <barname> ;
+      sh:datatype xsd:string ;
+      sh:minCount "1"^^xsd:integer ;
+      sh:order 1;
+      sx:teaserOrder 1;
+    ] ;
+    sh:property [
+      sh:path <baremail> ;
+      sh:nodeKind sh:Literal ;
+      sh:datatype xsd:string ;
+      sh:pattern ".+@.+[.].+" ;
+      sh:minCount 1 ;
+      sh:order 2;
+      sx:teaserOrder 2;
+
+    ] .

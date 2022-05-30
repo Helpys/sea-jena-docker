@@ -1,0 +1,54 @@
+@prefix : <http://www.seaa.ch/unused-prefix#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix seaa: <http://www.seaa.ch/base/> .
+@base <http://www.seaa.ch/test/> .
+
+
+<Bar>
+      rdf:type seaa:SeaaClass ;
+
+      rdfs:label "User"@en ;
+      rdfs:label "Benutzer"@de ;
+      rdfs:comment "Der Benutzer dieser Anwendung"@de .
+
+<barname>
+      a rdf:Property ;
+      rdfs:label "user name"@en ;
+      rdfs:label "Benutzername"@de ;
+      rdfs:comment "The username of the user" ;
+      rdfs:domain <User> ;
+      rdfs:range xsd:string .
+
+<baremail>
+      a rdf:Property ;
+      rdfs:label "user email"@en ;
+      rdfs:label "Benutzer Email"@de ;
+      rdfs:comment "The email of the user" ;
+      rdfs:domain <User> ;
+      rdfs:range xsd:string .
+
+#------------------------------------------------------------------------------
+#
+#
+<MyBar001>
+    rdf:type seaa:SeaaIndividual ;
+    rdf:type <Bar> ;
+    <barname> "My Bar Name 001" ;
+    <baremail> "my.bar@name.ch" .
+
+<MyBar004>
+    rdf:type seaa:SeaaIndividual ;
+    rdf:type <Bar> ;
+    <barname> "My Bar Name 004" ;
+    <baremail> "my.bar_004@name.ch" .
+
+<MyBar002>
+    <barname> "My Bar Name 002" ;
+    <useremail> "wrong_email_format" .
+
+<MyBar003>
+    <barname> "My Bar Name 003" ;
+    <useremail> "my.bar@name.ch" .
