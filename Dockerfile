@@ -117,7 +117,6 @@ VOLUME $FUSEKI_BASE
 COPY configuration/config.ttl $FUSEKI_HOME/
 COPY configuration/config.ttl $FUSEKI_BASE/
 
-
 EXPOSE 3030
 ENTRYPOINT ["/usr/bin/tini", "--", "/docker-entrypoint.sh"]
 CMD ["/jena-fuseki/fuseki-server"]
