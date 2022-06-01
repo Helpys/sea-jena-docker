@@ -52,8 +52,30 @@
     <barname> "My Bar Name 002" ;
     <useremail> "wrong_email_format" .
 
-<MyBar003>
-    rdf:type seaa:SeaaIndividual ;
-    rdf:type <Bar> ;
-    <barname> "My Bar Name 003" ;
-    <useremail> "my.bar@name.ch" .
+<< << <MyBar003> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0004-000000000001" >>
+seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << <MyBar003> rdf:type <Bar> >> seaa:eventId "00000000-0000-0000-0004-000000000001" >>
+seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << <MyBar003> <barname> "My Bar Name 003" >> seaa:eventId "00000000-0000-0000-0004-000000000001" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << <MyBar003> <useremail> "my.bar@name.ch" >> seaa:eventId "00000000-0000-0000-0004-000000000001" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "2021-07-01T00:00:00+02:00"^^xsd:dateTime .
