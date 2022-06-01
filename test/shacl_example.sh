@@ -17,3 +17,4 @@ result=$(curl -XPOST --data-binary @test/shacl_example.shacl.ttl  \
 echo "XXX-------------------------------------------------------------------------------"
 echo $result
 echo "XXX-------------------------------------------------------------------------------"
+echo $result | assert_contains "ValidationReport"
