@@ -46,9 +46,13 @@
     <baremail> "my.bar_004@name.ch" .
 
 <MyBar002>
+    rdf:type seaa:SeaaIndividual ;
+    rdf:type <Bar> ;
     <barname> "My Bar Name 002" ;
     <useremail> "wrong_email_format" .
 
 <MyBar003>
+    rdf:type seaa:SeaaIndividual ;
+    rdf:type <Bar> ;
     <barname> "My Bar Name 003" ;
     <useremail> "my.bar@name.ch" .
