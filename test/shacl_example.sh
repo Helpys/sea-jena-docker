@@ -18,3 +18,4 @@ echo "XXX-----------------------------------------------------------------------
 echo $result
 echo "XXX-------------------------------------------------------------------------------"
 echo $result | assert_contains "ValidationReport"
+echo $result | assert_contains "Violation"
