@@ -13,6 +13,7 @@
     a sh:NodeShape ;
     sh:targetClass <Bar> ;
     rdfs:label "Bar's node shape" ;
+
     sh:property [
       sh:path <barname> ;
       sh:datatype xsd:string ;
@@ -20,6 +21,7 @@
       sh:order 1;
       sx:teaserOrder 1;
     ] ;
+    
     sh:property [
       sh:path <baremail> ;
       sh:nodeKind sh:Literal ;
