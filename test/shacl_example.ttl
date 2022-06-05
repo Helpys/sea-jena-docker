@@ -58,6 +58,8 @@
 :bar008
     rdf:type <Bar> {| :accordingTo :employee22 |} .
 
+<< :bar009 rdf:type <Bar> >> :accordingTo :employee22 .
+
 
 << << <MyBar003> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0004-000000000001" >>
 seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
