@@ -17,5 +17,7 @@ result=$(curl -XPOST --data-binary @test/shacl_sparql_example.shacl.ttl  \
 echo "XXX-------------------------------------------------------------------------------"
 echo $result
 echo "XXX-------------------------------------------------------------------------------"
-echo $result | assert_contains "ValidationReport"
-echo $result | assert_contains "Violation"
+echo $result | assert_contains "false"
+echo $result | assert_contains "\"Spain\"@en"
+
+# curl -XPOST --data-binary @test/shacl_sparql_example.shacl.ttl --header 'Content-type: text/turtle' 'http://localhost:3030/dataset/shacl?graph=default'

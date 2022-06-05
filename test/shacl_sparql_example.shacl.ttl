@@ -16,6 +16,7 @@ ex:LanguageExampleShape
 		sh:message "Values are literals with German language tag." ;
 		sh:prefixes ex: ;
 		sh:select """
+      PREFIX ex:	<http://example.com/ns#>
 			SELECT $this (ex:germanLabel AS ?path) ?value
 			WHERE {
 				$this ex:germanLabel ?value .

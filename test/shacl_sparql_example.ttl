@@ -9,7 +9,6 @@
 @prefix ex:	<http://example.com/ns#> .
 
 
-
 ex:ValidCountry a ex:Country ;
 	ex:germanLabel "Spanien"@de .
 
