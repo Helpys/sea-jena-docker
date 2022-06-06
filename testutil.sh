@@ -18,6 +18,8 @@ docker exec $(docker ps -q) test/shacl_example.sh >> .temp
 echo "" >> .temp
 docker exec $(docker ps -q) test/shacl_sparql_example.sh >> .temp
 echo "" >> .temp
+docker exec $(docker ps -q) test/curl_example.sh >> .temp
+echo "" >> .temp
 
 cat .temp
 
