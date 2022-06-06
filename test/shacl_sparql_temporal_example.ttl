@@ -9,8 +9,30 @@
 @prefix ex:	<http://example.com/ns#> .
 
 
-ex:ValidCountry a ex:Country .
-ex:ValidCountry ex:germanLabel "Schweiz"@de .
+<< << ex:ValidCountry a ex:Country >> seaa:eventId "00000000-0000-0000-0020-000000000001" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
-ex:InvalidCountry a ex:Country .
-ex:InvalidCountry ex:germanLabel "Switzerland"@en .
+<< << ex:ValidCountry ex:germanLabel "Schweiz"@de >> seaa:eventId "00000000-0000-0000-0020-000000000002" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << ex:InvalidCountry a ex:Country >> seaa:eventId "00000000-0000-0000-0020-000000000003" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
+
+<< << ex:InvalidCountry ex:germanLabel "Switzerland"@en >> seaa:eventId "00000000-0000-0000-0020-000000000004" >>
+  seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
+  seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
