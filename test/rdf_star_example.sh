@@ -5,6 +5,7 @@ echo "--------------------------------------------------------------------------
 echo "test file: ($0)"
 
 echo "-------------------------------------------------------------------------------"
+bin/s-delete "http://localhost:3030/dataset/data" "default"
 bin/s-put http://localhost:3030/example/data default test/rdf_star_example.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>

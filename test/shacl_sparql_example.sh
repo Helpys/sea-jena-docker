@@ -8,6 +8,7 @@ echo "test file: ($0)"
 # validate Bar class
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
+bin/s-delete "http://localhost:3030/dataset/data" "default"
 bin/s-put http://localhost:3030/dataset/data default test/shacl_sparql_example.ttl
 
 result=$(curl -XPOST --data-binary @test/shacl_sparql_example.shacl.ttl  \
