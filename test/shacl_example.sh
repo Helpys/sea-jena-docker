@@ -9,7 +9,7 @@ echo "test file: ($0)"
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
 bin/s-delete "http://localhost:3030/dataset/data" "default"
-bin/s-put http://localhost:3030/dataset/data default test/shacl_example.ttl
+bin/s-put "http://localhost:3030/dataset/data" "default" test/shacl_example.ttl
 
 result=$(curl -XPOST --data-binary @test/shacl_example.shacl.ttl  \
      --header 'Content-type: text/turtle' \

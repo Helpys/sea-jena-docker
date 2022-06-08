@@ -6,6 +6,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix sx: <http://www.seaa.ch/shacl/#> .
+@prefix seaa: <http://www.seaa.ch/ontologies/2022/5/seaa-statement#> .
 
 
 
@@ -21,7 +22,7 @@
       sh:order 1;
       sx:teaserOrder 1;
     ] ;
-    
+
     sh:property [
       sh:path <baremail> ;
       sh:nodeKind sh:Literal ;
