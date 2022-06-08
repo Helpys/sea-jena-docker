@@ -8,7 +8,7 @@ echo "test file: ($0)"
 # find latest Junior
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
-bin/s-delete "http://localhost:3030/dataset/data" "default"
+bin/s-delete "http://localhost:3030/example/data" "default"
 bin/s-put http://localhost:3030/example/data default test/temporal_example.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
