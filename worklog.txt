@@ -1,0 +1,53 @@
+--------------------------------------------------------------------
+install first time
+
+-> install homebrew for macos
+brew update
+brew install elixir
+mix archive.install hex phx_new 1.4.14
+
+-> install xcode
+xcode-select --install
+
+--------------------------------------------------------------------
+upgrade
+
+brew update
+brew upgrade elixir
+mix archive.install hex phx_new 1.5.1
+
+
+# check vresion
+elixir -v
+mix phx.new -v
+
+--------------------------------------------------------------------
+Create init_script
+
+#!/bin/bash
+#
+echo "Init the project ONE"
+
+--> chmod u+x init_project.sh
+
+--------------------------------------------------------------------
+Init git:
+
+    got to project root folder
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+    $ git remote add origin https://github.com/Helpys/arranger.git
+    $ git push -u origin master
+--------------------------------------------------------------------
+run the init init_script
+
+./init_project.sh one
+
+--------------------------------------------------------------------
+
+Test coverage
+   mix test --cover
+
+
+https://leandrocp.com.br/2019/06/enforcing-code-quality-in-elixir/
