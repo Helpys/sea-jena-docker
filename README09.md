@@ -1,5 +1,5 @@
 # Creating the Phoenix project
-mix phx.new sea_graphql_api --no-html --no-webpack --no-ecto
+mix phx.new sea_graphql_api --no-assets --no-html --no-gettext --no-mailer --no-ecto --no-live
 
 # Generating the REST endpoints
 mix phx.gen.json Graphql graphql \
