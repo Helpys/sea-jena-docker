@@ -2,25 +2,25 @@
 docker ps -a
 
 rm -f .temp
-docker exec $(docker ps -q) test/turtle_example.sh >> .temp
+docker exec sea_fuseki_container test/turtle_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/rdf_star_example.sh >> .temp
+docker exec sea_fuseki_container test/rdf_star_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/sea_example.sh >> .temp
+docker exec sea_fuseki_container test/sea_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/temporal_example.sh >> .temp
+docker exec sea_fuseki_container test/temporal_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/language_example.sh >> .temp
+docker exec sea_fuseki_container test/language_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/vegi_temporal_example.sh >> .temp
+docker exec sea_fuseki_container test/vegi_temporal_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/shacl_example.sh >> .temp
+docker exec sea_fuseki_container test/shacl_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/shacl_sparql_example.sh >> .temp
+docker exec sea_fuseki_container test/shacl_sparql_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/curl_example.sh >> .temp
+docker exec sea_fuseki_container test/curl_example.sh >> .temp
 echo "" >> .temp
-docker exec $(docker ps -q) test/sparql_temporal_example.sh >> .temp
+docker exec sea_fuseki_container test/sparql_temporal_example.sh >> .temp
 echo "" >> .temp
 
 cat .temp
