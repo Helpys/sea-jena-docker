@@ -49,7 +49,7 @@ jobs:
           mkdir -p ~/.ssh
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
+          ssh-add - <<< "${{ secrets.DROPLET_PRIVATE_KEY }}"
 
       - name: Create subdir 'app' if it does not exists
         env:
@@ -115,7 +115,7 @@ jobs:
           mkdir -p ~/.ssh
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
+          ssh-add - <<< "${{ secrets.DROPLET_PRIVATE_KEY }}"
 
       - name: Create subdir 'app_sea_graphql_api' if it does not exists
         env:
@@ -170,7 +170,7 @@ jobs:
           mkdir -p ~/.ssh
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-add - <<< "${{ secrets.PRIVATE_KEY }}"
+          ssh-add - <<< "${{ secrets.DROPLET_PRIVATE_KEY }}"
 
       - name: Create datasets
         env:
