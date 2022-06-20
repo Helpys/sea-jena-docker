@@ -144,7 +144,7 @@ jobs:
             cd /app_sea_graphql_api
             source .env
             docker pull helpys/sea_graphql_api
-            docker run -d -p 4000:4000 helpys/sea_graphql_api
+            docker run -d -p 4000:4000 -e SECRET_KEY_BASE="4R6VTCX8tzKlUl1jvMjvF1ROROd7+mUArFNc8ELMT1b7uc15Dtig3H+BowR2c3yk" helpys/sea_graphql_api
           ENDSSH
 
 
