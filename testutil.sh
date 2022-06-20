@@ -1,6 +1,10 @@
 #!/bin/sh
 docker ps -a
 
+echo "**************************"
+echo "DIGITAL_OCEAN_IP_ADDRESS=$DIGITAL_OCEAN_IP_ADDRESS"
+echo "**************************"
+
 rm -f .temp
 docker exec sea_fuseki_container test/turtle_example.sh >> .temp
 echo "" >> .temp
