@@ -87,7 +87,15 @@ jobs:
       #       [[ $(docker volume ls -q) == "" ]] && echo "no volume to remove" || docker volume rm $(docker volume ls -q);
       #       [[ $(docker images -a -q) == "" ]] && echo "no images to remove" || docker rmi $(docker images -a -q);
       #     ENDSSH
-
+      - name: Create sea Network on docker
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
+            cd /app
+            source .env
+            docker network create sea_network || true
+          ENDSSH
       - name: Build and deploy images on DigitalOcean
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
@@ -97,7 +105,7 @@ jobs:
             source .env
             docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_TOKEN
             docker pull helpys/jena-fuseki
-            docker run -d --name sea_fuseki_container -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD helpys/jena-fuseki
+            docker run -d --name sea_fuseki_container -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD --network sea_network helpys/jena-fuseki
           ENDSSH
 
   test:
