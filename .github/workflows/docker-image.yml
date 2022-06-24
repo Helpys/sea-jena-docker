@@ -95,59 +95,6 @@ jobs:
             docker run -d --name sea_fuseki_container -p 3030:3030 -e ADMIN_PASSWORD=$FUSEKI_PASSWORD helpys/jena-fuseki
           ENDSSH
 
-  deploy2:
-    name: Deploy to sea_graphql_api to DigitalOcean
-    runs-on: ubuntu-latest
-    needs: deploy
-    # only runs when changes are made to the master branch
-    if: github.ref == 'refs/heads/master'
-    steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
-      - name: Add environment variables to .env
-        run: |
-          echo DEBUG=0 >> .env
-
-      - name: Add the private SSH key to the ssh-agent of the build environment
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          mkdir -p ~/.ssh
-          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          ssh-add - <<< "${{ secrets.DROPLET_PRIVATE_KEY }}"
-
-      - name: Create subdir 'app_sea_graphql_api' if it does not exists
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} mkdir -p /app_sea_graphql_api
-
-      - name: Copy docker-compose.prod.yml and test file to DigitalOcean
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          scp  -o StrictHostKeyChecking=no -r ./.env ./docker-compose.prod.yml root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:/app_sea_graphql_api
-          scp  -o StrictHostKeyChecking=no -r ./.env ./testutil.sh root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }}:/app_sea_graphql_api
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-      - name: Install Docker image sea_graphql_api on DigitalOcean
-        env:
-          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DIGITAL_OCEAN_IP_ADDRESS }} << 'ENDSSH'
-            cd /app_sea_graphql_api
-            source .env
-            docker pull helpys/sea_graphql_api
-            docker run -d --name sea_graphql_container -p 4000:4000 -e SECRET_KEY_BASE="4R6VTCX8tzKlUl1jvMjvF1ROROd7+mUArFNc8ELMT1b7uc15Dtig3H+BowR2c3yk" helpys/sea_graphql_api
-          ENDSSH
-
-
   test:
     name: Test the deployment
     runs-on: ubuntu-latest
