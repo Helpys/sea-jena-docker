@@ -26,6 +26,8 @@ docker exec sea_fuseki_container test/curl_example.sh >> .temp
 echo "" >> .temp
 docker exec sea_fuseki_container test/sparql_temporal_example.sh >> .temp
 echo "" >> .temp
+docker exec sea_fuseki_container test/countries_example.sh >> .temp
+echo "" >> .temp
 
 cat .temp
 
