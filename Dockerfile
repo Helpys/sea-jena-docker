@@ -92,6 +92,9 @@ RUN chmod 755 /docker-entrypoint.sh
 COPY configuration/config.ttl $FUSEKI_HOME/
 COPY configuration/config.ttl $FUSEKI_BASE/
 
+RUN mkdir -p apache_jena_script
+COPY apache_jena_script apache_jena_script
+
 RUN mkdir $FUSEKI_HOME/test
 COPY test/* $FUSEKI_HOME/test/
 
