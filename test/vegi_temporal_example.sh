@@ -8,8 +8,8 @@ echo "test file: ($0)"
 # find latest Junior
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
-bin/s-delete "http://localhost:3030/example/data" "default"
-bin/s-put http://localhost:3030/example/data default test/vegi_temporal_example.ttl
+apache_jena_script/s-delete "http://localhost:3030/example/data" "default"
+apache_jena_script/s-put http://localhost:3030/example/data default test/vegi_temporal_example.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
 PREFIX seaa: <http://www.seaa.ch/ontologies/2022/5/seaa-statement#>
@@ -37,5 +37,5 @@ SELECT DISTINCT ?s1 ?s2 ?s3 WHERE {
   	}
   }
 }"
-result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
+result=$(apache_jena_script/s-query --service http://localhost:3030/example/query "$sparql")
 echo $result | assert_contains "Legumes"

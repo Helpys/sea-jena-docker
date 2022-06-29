@@ -8,8 +8,8 @@ echo "test file: ($0)"
 # validate Bar class
 #-------------------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------"
-bin/s-delete "http://localhost:3030/dataset/data" "default"
-bin/s-put http://localhost:3030/dataset/data default test/sparql_temporal_example.ttl
+apache_jena_script/s-delete "http://localhost:3030/dataset/data" "default"
+apache_jena_script/s-put http://localhost:3030/dataset/data default test/sparql_temporal_example.ttl
 
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
@@ -23,7 +23,7 @@ SELECT ?s ?p ?o WHERE {
    BIND(PREDICATE(?t) as ?p)
    BIND(OBJECT(?t) as ?o)
 }"
-result=$(bin/s-query --service http://localhost:3030/dataset/query "$sparql")
+result=$(apache_jena_script/s-query --service http://localhost:3030/dataset/query "$sparql")
 echo $result | assert_contains "Switzerland"
 echo $result | assert_contains "Schweiz"
 

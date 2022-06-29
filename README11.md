@@ -3,10 +3,13 @@
 ## abstract
 
 ### request
-turtle triple <-(fuseki)- SPARQL <-(SPARQL.Client)- SPARQL.Query <-(sea_graphql)- (graphql)json <-(phoenix)- human
-
+```
+turtle triple <-(fuseki)- SPARQL <-(SPARQL.Client)- SPARQL.Query <-(sea_graphql)- (graphql)json <-(phoenix)- Changeset <-- html <-- human
+```
 ### response
-turtle triple -(fuseki)-> (fuseki)json -(SPARQL.Client)-> %SPARQL.Query.Result{} -(sea_graphql)-> (graphql)json -(phoenix)-> human
+```
+turtle triple -(fuseki)-> (fuseki)json -(SPARQL.Client)-> %SPARQL.Query.Result{} -(sea_graphql)-> (graphql)json -(phoenix)-> html --> human
+```
 
 ## stored in fuseki as (turtle) triples
 ```
@@ -94,6 +97,7 @@ query {
 ```
 
 ## graphql response
+https://countries.trevorblades.com
 ```
 {
   http_status_code: 200
@@ -112,3 +116,7 @@ query {
     }
   }
 }
+```
+
+## Changeset
+tbd

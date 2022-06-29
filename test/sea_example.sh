@@ -5,8 +5,8 @@ echo "--------------------------------------------------------------------------
 echo "test file: ($0)"
 
 echo "-------------------------------------------------------------------------------"
-bin/s-delete "http://localhost:3030/example/data" "default"
-bin/s-put http://localhost:3030/example/data default test/sea_example.ttl
+apache_jena_script/s-delete "http://localhost:3030/example/data" "default"
+apache_jena_script/s-put http://localhost:3030/example/data default test/sea_example.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
 PREFIX seaa: <http://www.seaa.ch/ontologies/2022/5/seaa-statement#>
@@ -19,7 +19,7 @@ result=$(bin/s-query --service http://localhost:3030/example/query "$sparql")
 echo $result | assert_contains "2020-01-01T17:07:07+02:00"
 
 echo "-------------------------------------------------------------------------------"
-bin/s-put http://localhost:3030/example/data default test/sea_example.ttl
+apache_jena_script/s-put http://localhost:3030/example/data default test/sea_example.ttl
 sparql="BASE <http://www.example.org/>
 PREFIX : <http://example.org/>
 PREFIX seaa: <http://www.seaa.ch/ontologies/2022/5/seaa-statement#>
