@@ -9,70 +9,70 @@
 @base <http://www.seaa.ch/base/> .
 
 << << <SeaaResource> rdf:type rdfs:Class >> seaa:eventId "00000000-0000-0000-0020-000000000001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:01+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaResource> rdfs:subClassOf rdfs:Resource >> seaa:eventId "00000000-0000-0000-0020-000000000002" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:03+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaResource> rdfs:label "SEAA Resource"@en >> seaa:eventId "00000000-0000-0000-0020-000000000003" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:02+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaClass> rdf:type rdfs:Class >> seaa:eventId "00000000-0000-0000-0020-000000000004" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T03:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaClass> rdfs:subClassOf rdfs:Class >> seaa:eventId "00000000-0000-0000-0020-000000000005" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T01:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaClass> rdfs:subClassOf seaa:SeaaResource >> seaa:eventId "00000000-0000-0000-0020-000000000006" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T02:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaClass> rdfs:label "SEAA Class Resource"@en  >> seaa:eventId "00000000-0000-0000-0020-000000000007" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T06:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaIndividual> rdf:type rdfs:Class >> seaa:eventId "00000000-0000-0000-0020-000000000008" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:01:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaIndividual> rdfs:subClassOf seaa:SeaaResource >> seaa:eventId "00000000-0000-0000-0020-000000000009" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:02:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <SeaaIndividual> rdfs:label "SEAA Individual Resource"@en >> seaa:eventId "00000000-0000-0000-0020-000000000011" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:03:01+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -81,14 +81,14 @@ seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 # ----------------------------------------------------------
 
 << << <Country> rdf:type seaa:SeaaClass >> seaa:eventId "00000000-0000-0000-0020-000000000021" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:03:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Country> rdfs:label "Country"@en >> seaa:eventId "00000000-0000-0000-0020-000000000031" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:03:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -96,28 +96,28 @@ seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 
 << << <name> a rdf:Property >> seaa:eventId "00000000-0000-0000-0020-000000000041" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:30:30+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:label "country name"@en >> seaa:eventId "00000000-0000-0000-0020-000000000051" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:30:30+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:domain <Country> >> seaa:eventId "00000000-0000-0000-0020-000000000061" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:30:30+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:range xsd:string >> seaa:eventId "00000000-0000-0000-0020-000000000071" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T01:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -125,126 +125,126 @@ seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 
 << << <region> a rdf:Property >> seaa:eventId "00000000-0000-0000-0020-000000000101" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T02:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <region> rdfs:label "region"@en >> seaa:eventId "00000000-0000-0000-0020-000000000201" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T03:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <region> rdfs:domain <Country> >> seaa:eventId "00000000-0000-0000-0020-000000000301" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T04:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <region> rdfs:range <Region> >> seaa:eventId "00000000-0000-0000-0020-000000000401" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T07:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <sub-region> a rdf:Property >> seaa:eventId "00000000-0000-0000-0020-000000000501" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T06:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <sub-region> rdfs:label "sub-region"@en >> seaa:eventId "00000000-0000-0000-0020-000000000601" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T05:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <sub-region> rdfs:domain <Country> >> seaa:eventId "00000000-0000-0000-0020-000000000701" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T04:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <sub-region> rdfs:range xsd:string >> seaa:eventId "00000000-0000-0000-0020-000000000801" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T03:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <alpha-2> a rdf:Property >> seaa:eventId "00000000-0000-0000-0020-000000000901" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T02:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <alpha-2> rdfs:label "alpha-2"@en >> seaa:eventId "00000000-0000-0000-0020-000000001001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T01:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <alpha-2> rdfs:domain <Country> >> seaa:eventId "00000000-0000-0000-0020-000000002001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-02T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <alpha-2> rdfs:range xsd:string >> seaa:eventId "00000000-0000-0000-0020-000000003001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-04T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Region> rdf:type seaa:SeaaClass >> seaa:eventId "00000000-0000-0000-0020-000000004001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-03T00:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Region> rdfs:label "Region"@en >> seaa:eventId "00000000-0000-0000-0020-000000005001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:09+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> a rdf:Property >> seaa:eventId "00000000-0000-0000-0020-000000006001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:08+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:label "region name"@en >> seaa:eventId "00000000-0000-0000-0020-000000007001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:07+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:domain <Region> >> seaa:eventId "00000000-0000-0000-0020-000000008001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:06+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <name> rdfs:range xsd:string >> seaa:eventId "00000000-0000-0000-0020-000000009001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:05+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
@@ -253,119 +253,119 @@ seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 # ----------------------------------------------------------
 
 << << <Europe> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0020-100000000001" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:04+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Europe> rdf:type <Region> >> seaa:eventId "00000000-0000-0000-0020-100000000002" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:03+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Europe> <name> "Europe" >> seaa:eventId "00000000-0000-0000-0020-100000000003" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:02+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Asia> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0020-100000000004" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:00:01+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Asia> rdf:type <Region> >> seaa:eventId "00000000-0000-0000-0020-100000000005" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:09:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Asia> <name> "Asia" >> seaa:eventId "00000000-0000-0000-0020-100000000006" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:08:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0020-100000000007" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:07:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> rdf:type <Country> >> seaa:eventId "00000000-0000-0000-0020-100000000008" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:06:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> <name> "Switzerland" >> seaa:eventId "00000000-0000-0000-0020-100000000009" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:05:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> <region> <Europe> >> seaa:eventId "00000000-0000-0000-0020-100000000011" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:04:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> <sub-region> "Western Europe" >> seaa:eventId "00000000-0000-0000-0020-100000000021" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:03:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Switzerland> <alpha-2> "CH" >> seaa:eventId "00000000-0000-0000-0020-100000000031" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:02:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Afghanistan> rdf:type seaa:SeaaIndividual >> seaa:eventId "00000000-0000-0000-0020-100000000041" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T00:01:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Afghanistan> rdf:type <Country> >> seaa:eventId "00000000-0000-0000-0020-100000000051" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T09:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Afghanistan> <name> "Afghanistan" >> seaa:eventId "00000000-0000-0000-0020-100000000061" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T08:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Afghanistan> <region> <Asia> >> seaa:eventId "00000000-0000-0000-0020-100000000071" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T07:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:deletionTime     "9999-07-01T00:00:00+02:00"^^xsd:dateTime .
 
 << << <Afghanistan> <sub-region> "Southern-Asia" >> seaa:eventId "00000000-0000-0000-0020-100000000081" >>
-seaa:transactionTime  "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
+seaa:transactionTime  "2020-01-01T06:00:00+02:00"^^xsd:dateTime ;
 seaa:decisionTime     "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validFrom        "2020-01-01T00:00:00+02:00"^^xsd:dateTime ;
 seaa:validTo          "2021-01-01T00:00:00+02:00"^^xsd:dateTime ;
