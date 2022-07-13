@@ -60,3 +60,54 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
     ## ja:data "data1.trig";
     ## ja:data "data2.trig";
     .
+
+
+## Service description for "/example" with all endpoints.
+## e.g.
+##   GET /example/query?query=...
+##   GET /example/get?default (SPARQL Graph Store Protocol)
+
+:service rdf:type fuseki:Service ;
+    fuseki:name "example" ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "sparql"
+    ];
+    fuseki:endpoint [
+        fuseki:operation fuseki:query ;
+        fuseki:name "query"
+    ] ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:update ;
+        fuseki:name "update"
+    ] ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:gsp-r ;
+        fuseki:name "get"
+    ] ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:gsp-rw ;
+        fuseki:name "data"
+    ] ;
+    fuseki:endpoint [
+        fuseki:operation fuseki:upload ;
+        fuseki:name "upload"
+    ] ;
+
+    ## SHACL service - see https://jena.apache.org/documentation/shacl/
+    ## /dataset/shacl
+    fuseki:endpoint [
+    fuseki:operation fuseki:shacl ;
+    fuseki:name "shacl"
+    ] ;
+
+    fuseki:dataset :dataset ;
+    .
+
+
+# Transactional in-memory dataset.
+:dataset rdf:type ja:MemoryDataset ;
+    ## Optional load with data on start-up
+    ## ja:data "data1.trig";
+    ## ja:data "data2.trig";
+    .
