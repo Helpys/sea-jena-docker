@@ -1,11 +1,219 @@
+include test/turtle_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/turtle_example.sh)
+-------------------------------------------------------------------------------
+/jena-fuseki
+total 36052
+drwxr-xr-x 1 root root     4096 Jul 14 12:56 ..
+drwxr-xr-x 1 root root     4096 Jul 13 17:44 .
+drwxr-xr-x 1 root root     4096 Jul 13 17:44 apache_jena_script
+drwxr-xr-x 1 root root     4096 Jul 13 17:44 configuration
+drwxr-xr-x 1 root root     4096 Jul 13 17:44 test
+drwxr-xr-x 2 root root     4096 Jul 13 17:44 bin
+-rw-r--r-- 1 root root     2830 Jul 13 17:43 config.ttl
+-rwxr-xr-x 1 root root     2143 Jul 13 17:43 load.sh
+-rw-r--r-- 1 root root     1788 Jul 13 17:43 shiro.ini
+-rwxr-xr-x 1 root root      921 Jul 13 17:43 tdbloader
+-rwxr-xr-x 1 root root      922 Jul 13 17:43 tdbloader2
+-rw-r--r-- 1 root root    36975 Jan 30 14:52 LICENSE
+-rw-r--r-- 1 root root     8914 Jan 30 14:52 NOTICE
+-rw-r--r-- 1 root root     1151 Jan 30 14:52 README
+-rw-r--r-- 1 root root    12339 Jan 30 14:52 fuseki
+-rwxr-xr-x 1 root root     1241 Jan 30 14:52 fuseki-backup
+-rwxr-xr-x 1 root root     3376 Jan 30 14:52 fuseki-server
+-rw-r--r-- 1 root root     1264 Jan 30 14:52 fuseki-server.bat
+-rw-r--r-- 1 root root 36770418 Jan 30 14:52 fuseki-server.jar
+-rw-r--r-- 1 root root     2217 Jan 30 14:52 fuseki.service
+-rw-r--r-- 1 root root     2124 Jan 30 14:52 log4j2.properties
+drwxr-xr-x 4 root root     4096 Jan 30 14:52 webapp
+occurences:'3'
+assert_contains [0;32mok[0m, found 3 occurence(s) of the pattern 'www'
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Spiderman' not found
+red '1' line(s)
+
+
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Green[[:space:]]Goblin' not found
+red '1' line(s)
 
 
 
+include test/rdf_star_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/rdf_star_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'employee22' not found
+red '1' line(s)
 
 
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'castBy' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
 
 
+include test/sea_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/sea_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '2020-01-01T17:07:07+02:00' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+-------------------------------------------------------------------------------
+*********************************************
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+*********************************************
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'employee38' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
 
 
+include test/temporal_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/temporal_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '00000000-0000-0000-0000-000000000005' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '00000000-0000-0000-0000-000000000002' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Junior' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/language_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/language_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Schmetterling' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/vegi_temporal_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/vegi_temporal_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Legumes' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/shacl_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/shacl_example.sh)
+-------------------------------------------------------------------------------
+XXX-------------------------------------------------------------------------------
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+XXX-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'ValidationReport' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Violation' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/shacl_sparql_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/shacl_sparql_example.sh)
+-------------------------------------------------------------------------------
+XXX-------------------------------------------------------------------------------
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+XXX-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'false' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '"Spain"@en' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/shacl</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/curl_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/curl_example.sh)
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+result=''
+
+include test/sparql_temporal_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/sparql_temporal_example.sh)
+-------------------------------------------------------------------------------
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Switzerland' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern 'Schweiz' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/dataset/query</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+
+include test/countries_example.sh
+-rwxr-xr-x 1 root root 121464 Jan 17  2019 /bin/dash
+-------------------------------------------------------------------------------
+test file: (test/countries_example.sh)
+-------------------------------------------------------------------------------
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 503 Service Unavailable</title>
+</head>
+<body><h2>HTTP ERROR 503 Service Unavailable</h2>
+<table>
+<tr><th>URI:</th><td>/example/data</td></tr>
+<tr><th>STATUS:</th><td>503</td></tr>
+<tr><th>MESSAGE:</th><td>Service Unavailable</td></tr>
+<tr><th>SERVLET:</th><td>-</td></tr>
+</table>
+
+</body>
+</html>
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '00000000-0000-0000-0020-100000000001' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/data</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
+
+occurences:'0'
+assert_contains [0;31massertion-fail[0m, pattern '00000000-0000-0000-0020-000000000001' not found
+red '1' line(s)
+<html> <head> <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/> <title>Error 503 Service Unavailable</title> </head> <body><h2>HTTP ERROR 503 Service Unavailable</h2> <table> <tr><th>URI:</th><td>/example/data</td></tr> <tr><th>STATUS:</th><td>503</td></tr> <tr><th>MESSAGE:</th><td>Service Unavailable</td></tr> <tr><th>SERVLET:</th><td>-</td></tr> </table> </body> </html>
 
 

@@ -8,7 +8,8 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
 
 [] rdf:type fuseki:Server ;
    fuseki:services (
-     :service
+     :service1 ;
+     :service2 ;
    ) .
 
 ## Service description for "/dataset" with all endpoints.
@@ -16,7 +17,7 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
 ##   GET /dataset/query?query=...
 ##   GET /dataset/get?default (SPARQL Graph Store Protocol)
 
-:service rdf:type fuseki:Service ;
+:service1 rdf:type fuseki:Service ;
     fuseki:name "dataset" ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
@@ -50,12 +51,12 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
     fuseki:name "shacl"
     ] ;
 
-    fuseki:dataset :dataset ;
+    fuseki:dataset :dataset1 ;
     .
 
 
 # Transactional in-memory dataset.
-:dataset rdf:type ja:MemoryDataset ;
+:dataset1 rdf:type ja:MemoryDataset ;
     ## Optional load with data on start-up
     ## ja:data "data1.trig";
     ## ja:data "data2.trig";
@@ -67,7 +68,7 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
 ##   GET /example/query?query=...
 ##   GET /example/get?default (SPARQL Graph Store Protocol)
 
-:service rdf:type fuseki:Service ;
+:service2 rdf:type fuseki:Service ;
     fuseki:name "example" ;
     fuseki:endpoint [
         fuseki:operation fuseki:query ;
@@ -101,12 +102,11 @@ PREFIX ja:      <http://jena.hpl.hp.com/2005/11/Assembler#>
     fuseki:name "shacl"
     ] ;
 
-    fuseki:dataset :dataset ;
+    fuseki:dataset :dataset2 ;
     .
 
-
 # Transactional in-memory dataset.
-:dataset rdf:type ja:MemoryDataset ;
+:dataset2 rdf:type ja:MemoryDataset ;
     ## Optional load with data on start-up
     ## ja:data "data1.trig";
     ## ja:data "data2.trig";
