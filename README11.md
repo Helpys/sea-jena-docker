@@ -11,6 +11,7 @@ turtle triple <-(fuseki)- SPARQL <-(SPARQL.Client)- SPARQL.Query <-(sea_graphql)
 turtle triple -(fuseki)-> (fuseki)json -(SPARQL.Client)-> %SPARQL.Query.Result{} -(sea_graphql)-> (graphql)json -(phoenix)-> html --> human
 ```
 
+
 ## stored in fuseki as (turtle) triples
 ```
 << << <Mushroom> rdfs:subClassOf <Vegetable> >> seaa:eventId "00000000-0000-0000-0002-000000000008" >>
